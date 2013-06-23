@@ -1,0 +1,12 @@
+#.gitignore
+
+playground/
+
+#compiled c
+*.o
+*.hex
+*.bin
+*.d
+*.list
+*.elf
+*.srec
