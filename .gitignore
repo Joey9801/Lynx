@@ -1,6 +1,6 @@
 #.gitignore
 
-playground/
+#playground/
 
 #compiled c
 *.o
@@ -10,3 +10,4 @@ playground/
 *.list
 *.elf
 *.srec
+*~
