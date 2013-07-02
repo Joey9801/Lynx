@@ -6,16 +6,16 @@
 #define symbol_buffer (taps/taps_per_symbol)
 
 
-volatile const int taps[TAPS];
-volatile const int out[2]; //0->I, 1->Q
+static int taps[TAPS];
+static int out[2]; //0->I, 1->Q
 
 //circular buffer for symbols in the filter delay line
-volatile const char symbols[2][symbol_buffer];
+static char symbols[2][symbol_buffer];
 //points at the oldest value in the buffer
-volatile const char symbol_ptr = 0;
+static char symbol_ptr = 0;
 //points at the current symbol in the packet
 //how many 0's there currently are at the start of the delay line
-volatile const char delay_offset = 0;
+static char delay_offset = 0;
 
 //generates taps for raised cosine filter
 void generate_taps(void);
