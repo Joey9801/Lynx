@@ -11,3 +11,6 @@
 *.elf
 *.srec
 *~
+
+#eagle working files
+*.l#*
