@@ -13481,6 +13481,11 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="GND1" library="testpad" deviceset="PTR1" device="PAD1-13Y" value="PTR1PAD1-13Y"/>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
 <part name="GND2" library="testpad" deviceset="PTR1" device="PAD1-13Y" value="PTR1PAD1-13Y"/>
+<part name="C37" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF">
+<attribute name="ARM" value=""/>
+</part>
+<part name="+3V13" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY42" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -13652,8 +13657,8 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <instance part="C27" gate="G$1" x="1.27" y="-99.06" rot="MR0"/>
 <instance part="SUPPLY34" gate="GND" x="6.35" y="-91.44" rot="R180"/>
 <instance part="+3V12" gate="G$1" x="6.35" y="-109.22" rot="R180"/>
-<instance part="X1" gate="G$1" x="226.06" y="12.7" rot="R180"/>
-<instance part="SUPPLY35" gate="GND" x="212.09" y="15.24" rot="R270"/>
+<instance part="X1" gate="G$1" x="-6.35" y="78.74" rot="R270"/>
+<instance part="SUPPLY35" gate="GND" x="-8.89" y="64.77"/>
 <instance part="R8" gate="G$1" x="144.78" y="1.27" rot="R180"/>
 <instance part="C28" gate="G$1" x="134.62" y="-1.27" smashed="yes" rot="R90">
 <attribute name="NAME" x="133.096" y="0.889" size="1.778" layer="95" rot="R180"/>
@@ -13666,17 +13671,17 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="ARM" x="134.62" y="-5.08" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="SUPPLY36" gate="GND" x="130.81" y="-13.97"/>
-<instance part="C30" gate="G$1" x="165.1" y="2.54">
-<attribute name="ARM" x="165.1" y="2.54" size="1.778" layer="96" display="off"/>
+<instance part="C30" gate="G$1" x="185.42" y="-3.81">
+<attribute name="ARM" x="185.42" y="-3.81" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C31" gate="G$1" x="170.18" y="2.54">
-<attribute name="ARM" x="170.18" y="2.54" size="1.778" layer="96" display="off"/>
+<instance part="C31" gate="G$1" x="195.58" y="-3.81">
+<attribute name="ARM" x="195.58" y="-3.81" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C32" gate="G$1" x="176.53" y="2.54">
-<attribute name="ARM" x="176.53" y="2.54" size="1.778" layer="96" display="off"/>
+<instance part="C32" gate="G$1" x="205.74" y="-3.81">
+<attribute name="ARM" x="205.74" y="-3.81" size="1.778" layer="96" display="off"/>
 </instance>
-<instance part="C33" gate="G$1" x="198.12" y="1.27">
-<attribute name="ARM" x="198.12" y="1.27" size="1.778" layer="96" display="off"/>
+<instance part="C33" gate="G$1" x="223.52" y="-3.81">
+<attribute name="ARM" x="223.52" y="-3.81" size="1.778" layer="96" display="off"/>
 </instance>
 <instance part="C34" gate="G$1" x="177.8" y="46.99" rot="R90">
 <attribute name="ARM" x="177.8" y="46.99" size="1.778" layer="96" rot="R90" display="off"/>
@@ -13696,6 +13701,11 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <instance part="GND1" gate="G$1" x="-62.23" y="95.25"/>
 <instance part="SUPPLY27" gate="GND" x="-44.45" y="106.68" rot="R180"/>
 <instance part="GND2" gate="G$1" x="-44.45" y="93.98"/>
+<instance part="C37" gate="G$1" x="233.68" y="-3.81">
+<attribute name="ARM" x="233.68" y="-3.81" size="1.778" layer="96" display="off"/>
+</instance>
+<instance part="+3V13" gate="G$1" x="212.09" y="10.16"/>
+<instance part="SUPPLY42" gate="GND" x="212.09" y="-17.78"/>
 </instances>
 <busses>
 </busses>
@@ -14284,6 +14294,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-120.65" y1="-40.64" x2="-120.65" y2="-38.1" width="0.1524" layer="91"/>
 <wire x1="-120.65" y1="-40.64" x2="-120.65" y2="-44.45" width="0.1524" layer="91"/>
 <pinref part="SUPPLY31" gate="GND" pin="GND"/>
+<junction x="-120.65" y="-40.64"/>
 </segment>
 <segment>
 <pinref part="SUPPLY32" gate="GND" pin="GND"/>
@@ -14312,7 +14323,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="X1" gate="G$1" pin="2"/>
-<wire x1="223.52" y1="15.24" x2="214.63" y2="15.24" width="0.1524" layer="91"/>
+<wire x1="-8.89" y1="76.2" x2="-8.89" y2="67.31" width="0.1524" layer="91"/>
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
 </segment>
 <segment>
@@ -14323,6 +14334,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="130.81" y1="-5.08" x2="132.08" y2="-5.08" width="0.1524" layer="91"/>
 <wire x1="130.81" y1="-5.08" x2="130.81" y2="-11.43" width="0.1524" layer="91"/>
 <pinref part="SUPPLY36" gate="GND" pin="GND"/>
+<junction x="130.81" y="-5.08"/>
 </segment>
 <segment>
 <pinref part="C34" gate="G$1" pin="2"/>
@@ -14365,6 +14377,29 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="SUPPLY27" gate="GND" pin="GND"/>
 <wire x1="-44.45" y1="96.52" x2="-44.45" y2="104.14" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="C30" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="-8.89" x2="185.42" y2="-11.43" width="0.1524" layer="91"/>
+<pinref part="C37" gate="G$1" pin="2"/>
+<wire x1="185.42" y1="-11.43" x2="195.58" y2="-11.43" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="-11.43" x2="205.74" y2="-11.43" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="-11.43" x2="212.09" y2="-11.43" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="-11.43" x2="223.52" y2="-11.43" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="-11.43" x2="233.68" y2="-11.43" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="-11.43" x2="233.68" y2="-8.89" width="0.1524" layer="91"/>
+<pinref part="C33" gate="G$1" pin="2"/>
+<wire x1="223.52" y1="-8.89" x2="223.52" y2="-11.43" width="0.1524" layer="91"/>
+<pinref part="C32" gate="G$1" pin="2"/>
+<wire x1="205.74" y1="-8.89" x2="205.74" y2="-11.43" width="0.1524" layer="91"/>
+<pinref part="C31" gate="G$1" pin="2"/>
+<wire x1="195.58" y1="-8.89" x2="195.58" y2="-11.43" width="0.1524" layer="91"/>
+<junction x="195.58" y="-11.43"/>
+<junction x="205.74" y="-11.43"/>
+<junction x="223.52" y="-11.43"/>
+<pinref part="SUPPLY42" gate="GND" pin="GND"/>
+<wire x1="212.09" y1="-15.24" x2="212.09" y2="-11.43" width="0.1524" layer="91"/>
+<junction x="212.09" y="-11.43"/>
+</segment>
 </net>
 <net name="N$1" class="0">
 <segment>
@@ -14389,8 +14424,16 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="105.41" y="-55.88" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="-8.89" x2="80.01" y2="-8.89" width="0.1524" layer="91"/>
 <label x="80.01" y="-8.89" size="1.778" layer="95"/>
+<pinref part="DAC1" gate="G$1" pin="I_OUT"/>
+<wire x1="0" y1="-8.89" x2="5.08" y2="-8.89" width="0.1524" layer="91"/>
+<pinref part="R3" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="-8.89" x2="5.08" y2="-1.27" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-1.27" x2="16.51" y2="-1.27" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="-1.27" x2="26.67" y2="-1.27" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="-1.27" x2="26.67" y2="-8.89" width="0.1524" layer="91"/>
+<junction x="16.51" y="-1.27"/>
+<wire x1="26.67" y1="-8.89" x2="80.01" y2="-8.89" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BBMI" class="0">
@@ -14400,8 +14443,16 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="105.41" y="-60.96" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="-16.51" x2="80.01" y2="-16.51" width="0.1524" layer="91"/>
 <label x="80.01" y="-16.51" size="1.778" layer="95"/>
+<pinref part="DAC1" gate="G$1" pin="!I_OUT!"/>
+<wire x1="0" y1="-16.51" x2="5.08" y2="-16.51" width="0.1524" layer="91"/>
+<pinref part="R4" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="-16.51" x2="5.08" y2="-24.13" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-24.13" x2="16.51" y2="-24.13" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="-24.13" x2="26.67" y2="-24.13" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="-24.13" x2="26.67" y2="-16.51" width="0.1524" layer="91"/>
+<junction x="16.51" y="-24.13"/>
+<wire x1="80.01" y1="-16.51" x2="26.67" y2="-16.51" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BBPQ" class="0">
@@ -14411,8 +14462,16 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="105.41" y="-71.12" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="-69.85" x2="80.01" y2="-69.85" width="0.1524" layer="91"/>
 <label x="80.01" y="-69.85" size="1.778" layer="95"/>
+<wire x1="0" y1="-69.85" x2="5.08" y2="-69.85" width="0.1524" layer="91"/>
+<pinref part="R5" gate="G$1" pin="1"/>
+<wire x1="5.08" y1="-69.85" x2="5.08" y2="-62.23" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-62.23" x2="16.51" y2="-62.23" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="-62.23" x2="26.67" y2="-62.23" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="-62.23" x2="26.67" y2="-69.85" width="0.1524" layer="91"/>
+<pinref part="DAC2" gate="G$1" pin="!I_OUT!"/>
+<junction x="16.51" y="-62.23"/>
+<wire x1="26.67" y1="-69.85" x2="80.01" y2="-69.85" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BBMQ" class="0">
@@ -14422,8 +14481,16 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="105.41" y="-76.2" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="73.66" y1="-77.47" x2="80.01" y2="-77.47" width="0.1524" layer="91"/>
 <label x="80.01" y="-77.47" size="1.778" layer="95"/>
+<wire x1="0" y1="-77.47" x2="5.08" y2="-77.47" width="0.1524" layer="91"/>
+<pinref part="R6" gate="G$1" pin="2"/>
+<wire x1="5.08" y1="-77.47" x2="5.08" y2="-85.09" width="0.1524" layer="91"/>
+<wire x1="5.08" y1="-85.09" x2="16.51" y2="-85.09" width="0.1524" layer="91"/>
+<wire x1="16.51" y1="-85.09" x2="26.67" y2="-85.09" width="0.1524" layer="91"/>
+<wire x1="26.67" y1="-85.09" x2="26.67" y2="-77.47" width="0.1524" layer="91"/>
+<pinref part="DAC2" gate="G$1" pin="I_OUT"/>
+<junction x="16.51" y="-85.09"/>
+<wire x1="80.01" y1="-77.47" x2="26.67" y2="-77.47" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -14498,12 +14565,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="IQ_MOD" gate="G$1" pin="LO@3"/>
 <wire x1="140.97" y1="-95.25" x2="140.97" y2="-104.14" width="0.1524" layer="91"/>
 <label x="138.43" y="-106.68" size="1.778" layer="95"/>
-</segment>
-<segment>
-<pinref part="X1" gate="G$1" pin="1"/>
-<wire x1="223.52" y1="12.7" x2="214.63" y2="12.7" width="0.1524" layer="91"/>
-<wire x1="214.63" y1="12.7" x2="214.63" y2="11.43" width="0.1524" layer="91"/>
-<label x="212.09" y="8.89" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="C5" gate="G$1" pin="2"/>
@@ -14703,6 +14764,30 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="IC1" gate="G$1" pin="VO"/>
 <pinref part="C35" gate="G$1" pin="1"/>
 <label x="-147.32" y="-99.06" size="1.778" layer="95"/>
+<junction x="-152.4" y="-99.06"/>
+</segment>
+<segment>
+<pinref part="C30" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="-1.27" x2="185.42" y2="1.27" width="0.1524" layer="91"/>
+<pinref part="C37" gate="G$1" pin="1"/>
+<wire x1="185.42" y1="1.27" x2="195.58" y2="1.27" width="0.1524" layer="91"/>
+<wire x1="195.58" y1="1.27" x2="205.74" y2="1.27" width="0.1524" layer="91"/>
+<wire x1="205.74" y1="1.27" x2="212.09" y2="1.27" width="0.1524" layer="91"/>
+<wire x1="212.09" y1="1.27" x2="223.52" y2="1.27" width="0.1524" layer="91"/>
+<wire x1="223.52" y1="1.27" x2="233.68" y2="1.27" width="0.1524" layer="91"/>
+<wire x1="233.68" y1="1.27" x2="233.68" y2="-1.27" width="0.1524" layer="91"/>
+<pinref part="C31" gate="G$1" pin="1"/>
+<wire x1="195.58" y1="-1.27" x2="195.58" y2="1.27" width="0.1524" layer="91"/>
+<pinref part="C32" gate="G$1" pin="1"/>
+<wire x1="205.74" y1="-1.27" x2="205.74" y2="1.27" width="0.1524" layer="91"/>
+<pinref part="C33" gate="G$1" pin="1"/>
+<wire x1="223.52" y1="-1.27" x2="223.52" y2="1.27" width="0.1524" layer="91"/>
+<junction x="223.52" y="1.27"/>
+<junction x="205.74" y="1.27"/>
+<junction x="195.58" y="1.27"/>
+<pinref part="+3V13" gate="G$1" pin="+3V3"/>
+<wire x1="212.09" y1="7.62" x2="212.09" y2="1.27" width="0.1524" layer="91"/>
+<junction x="212.09" y="1.27"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -14962,58 +15047,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-12.7" y1="-39.37" x2="-10.16" y2="-39.37" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="N$14" class="0">
-<segment>
-<pinref part="DAC1" gate="G$1" pin="I_OUT"/>
-<wire x1="0" y1="-8.89" x2="5.08" y2="-8.89" width="0.1524" layer="91"/>
-<pinref part="R3" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="-8.89" x2="5.08" y2="-1.27" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-1.27" x2="16.51" y2="-1.27" width="0.1524" layer="91"/>
-<wire x1="16.51" y1="-1.27" x2="26.67" y2="-1.27" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="-1.27" x2="26.67" y2="-8.89" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="-8.89" x2="31.75" y2="-8.89" width="0.1524" layer="91"/>
-<junction x="16.51" y="-1.27"/>
-</segment>
-</net>
-<net name="N$15" class="0">
-<segment>
-<pinref part="DAC1" gate="G$1" pin="!I_OUT!"/>
-<wire x1="0" y1="-16.51" x2="5.08" y2="-16.51" width="0.1524" layer="91"/>
-<pinref part="R4" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="-16.51" x2="5.08" y2="-24.13" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-24.13" x2="16.51" y2="-24.13" width="0.1524" layer="91"/>
-<wire x1="16.51" y1="-24.13" x2="26.67" y2="-24.13" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="-24.13" x2="26.67" y2="-16.51" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="-16.51" x2="31.75" y2="-16.51" width="0.1524" layer="91"/>
-<junction x="16.51" y="-24.13"/>
-</segment>
-</net>
-<net name="N$28" class="0">
-<segment>
-<wire x1="0" y1="-69.85" x2="5.08" y2="-69.85" width="0.1524" layer="91"/>
-<pinref part="R5" gate="G$1" pin="1"/>
-<wire x1="5.08" y1="-69.85" x2="5.08" y2="-62.23" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-62.23" x2="16.51" y2="-62.23" width="0.1524" layer="91"/>
-<wire x1="16.51" y1="-62.23" x2="26.67" y2="-62.23" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="-62.23" x2="26.67" y2="-69.85" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="-69.85" x2="31.75" y2="-69.85" width="0.1524" layer="91"/>
-<pinref part="DAC2" gate="G$1" pin="!I_OUT!"/>
-<junction x="16.51" y="-62.23"/>
-</segment>
-</net>
-<net name="N$29" class="0">
-<segment>
-<wire x1="0" y1="-77.47" x2="5.08" y2="-77.47" width="0.1524" layer="91"/>
-<pinref part="R6" gate="G$1" pin="2"/>
-<wire x1="5.08" y1="-77.47" x2="5.08" y2="-85.09" width="0.1524" layer="91"/>
-<wire x1="5.08" y1="-85.09" x2="16.51" y2="-85.09" width="0.1524" layer="91"/>
-<wire x1="16.51" y1="-85.09" x2="26.67" y2="-85.09" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="-85.09" x2="26.67" y2="-77.47" width="0.1524" layer="91"/>
-<wire x1="26.67" y1="-77.47" x2="31.75" y2="-77.47" width="0.1524" layer="91"/>
-<pinref part="DAC2" gate="G$1" pin="I_OUT"/>
-<junction x="16.51" y="-85.09"/>
-</segment>
-</net>
 <net name="USART1_TX" class="0">
 <segment>
 <pinref part="U$1" gate="PORT_A" pin="PA9"/>
@@ -15067,6 +15100,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-182.88" y1="-99.06" x2="-182.88" y2="-104.14" width="0.1524" layer="91"/>
 <pinref part="C36" gate="G$1" pin="1"/>
 <label x="-186.69" y="-97.79" size="1.778" layer="95" rot="R180"/>
+<junction x="-182.88" y="-99.06"/>
 </segment>
 <segment>
 <pinref part="X2" gate="-1" pin="S"/>
@@ -15083,9 +15117,29 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-195.58" y1="-146.05" x2="-193.04" y2="-146.05" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="MOD-RF" class="0">
+<segment>
+<pinref part="IQ_MOD" gate="G$1" pin="RF@11"/>
+<wire x1="171.45" y1="-62.23" x2="180.34" y2="-62.23" width="0.1524" layer="91"/>
+<label x="180.34" y="-62.23" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="X1" gate="G$1" pin="1"/>
+<wire x1="-6.35" y1="76.2" x2="-6.35" y2="67.31" width="0.1524" layer="91"/>
+<wire x1="-6.35" y1="67.31" x2="-5.08" y2="67.31" width="0.1524" layer="91"/>
+<label x="-5.08" y="66.04" size="1.778" layer="95"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
+<errors>
+<approved hash="115,1,-44.2553,74.847,SPI1-DEBUG,,,,,"/>
+<approved hash="115,1,-62.0353,74.847,SPI2-DEBUG,,,,,"/>
+<approved hash="115,1,-25.2053,76.2423,USART1,,,,,"/>
+<approved hash="115,1,-118.068,27.7453,DAC1-DB,,,,,"/>
+<approved hash="115,1,-106.638,7.42527,DAC2-DB,,,,,"/>
+</errors>
 </schematic>
 </drawing>
 </eagle>
