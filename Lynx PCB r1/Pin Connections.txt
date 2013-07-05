@@ -1,0 +1,11 @@
+SPI1:
+MOSI -> PA7
+MISO -> PA6
+SCK  -> PA5
+CS   -> PA4
+
+SPI2:
+MOSI -> PB15
+MISO -> PB14
+SCK  -> PB13
+CS   -> PB12
