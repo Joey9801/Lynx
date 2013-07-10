@@ -1,3 +1,5 @@
+#include "debug.h"
+
 void debug_send(const char *data)
 {
     while (*data)
@@ -7,18 +9,27 @@ void debug_send(const char *data)
     }
 }
 
-void debug_send_int(int number){
-	int length = len(number);
-	char string[length+1];
-	int i;
-	for(i=0; i<length; i++) {
-		string[length-i] = number%10 + '0';
-		number = number/10;
-	}
-	debug_send(string);
-}
+void debug_send_int(int value)
+{
+        int i;
+        int nr_digits = 0;
+        char buffer[25];
 
-int len(int n){
-	if(n<10) return 1;
-	return 1 + len(n/10);
+        if (value < 0) {
+                usart_send_blocking(USART2, '-');
+                value = value * -1;
+        }
+
+        if (value == 0) {
+                usart_send_blocking(USART2, '0');
+        }
+
+        while (value > 0) {
+                buffer[nr_digits++] = "0123456789"[value % 10];
+                value /= 10;
+        }
+
+        for (i = nr_digits-1; i >= 0; i--) {
+                usart_send_blocking(USART2, buffer[i]);
+        }
 }

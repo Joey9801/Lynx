@@ -1,19 +1,6 @@
 #include <libopencm3/stm32/f4/gpio.h>
 
-void next_led(void);
-void set_leds(int leds);
-
-enum led {
-	green	= 1<<12,
-	orange 	= 1<<13,
-	red 	= 1<<14,
-	blue 	= 1<<15
-};
-
-static volatile enum led state = green;
-
 void next_led(void){
-//can form circling pattern
 	switch(state){
 	case green:
 		state = orange;
