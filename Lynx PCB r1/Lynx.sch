@@ -8,34 +8,34 @@
 </settings>
 <grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
-<layer number="1" name="Top" color="4" fill="1" visible="yes" active="no"/>
-<layer number="2" name="Route2" color="1" fill="3" visible="yes" active="no"/>
-<layer number="3" name="Route3" color="4" fill="3" visible="yes" active="no"/>
-<layer number="4" name="Route4" color="1" fill="4" visible="yes" active="no"/>
-<layer number="5" name="Route5" color="4" fill="4" visible="yes" active="no"/>
-<layer number="6" name="Route6" color="1" fill="8" visible="yes" active="no"/>
-<layer number="7" name="Route7" color="4" fill="8" visible="yes" active="no"/>
-<layer number="8" name="Route8" color="1" fill="2" visible="yes" active="no"/>
-<layer number="9" name="Route9" color="4" fill="2" visible="yes" active="no"/>
-<layer number="10" name="Route10" color="1" fill="7" visible="yes" active="no"/>
-<layer number="11" name="Route11" color="4" fill="7" visible="yes" active="no"/>
-<layer number="12" name="Route12" color="1" fill="5" visible="yes" active="no"/>
-<layer number="13" name="Route13" color="4" fill="5" visible="yes" active="no"/>
-<layer number="14" name="Route14" color="1" fill="6" visible="yes" active="no"/>
-<layer number="15" name="Route15" color="4" fill="6" visible="yes" active="no"/>
-<layer number="16" name="Bottom" color="1" fill="1" visible="yes" active="no"/>
-<layer number="17" name="Pads" color="2" fill="1" visible="yes" active="no"/>
-<layer number="18" name="Vias" color="2" fill="1" visible="yes" active="no"/>
-<layer number="19" name="Unrouted" color="6" fill="1" visible="yes" active="no"/>
-<layer number="20" name="Dimension" color="15" fill="1" visible="yes" active="no"/>
-<layer number="21" name="tPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="22" name="bPlace" color="7" fill="1" visible="yes" active="no"/>
-<layer number="23" name="tOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="24" name="bOrigins" color="15" fill="1" visible="yes" active="no"/>
-<layer number="25" name="tNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="26" name="bNames" color="7" fill="1" visible="yes" active="no"/>
-<layer number="27" name="tValues" color="7" fill="1" visible="yes" active="no"/>
-<layer number="28" name="bValues" color="7" fill="1" visible="yes" active="no"/>
+<layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
+<layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
+<layer number="3" name="Route3" color="4" fill="3" visible="no" active="no"/>
+<layer number="4" name="Route4" color="1" fill="4" visible="no" active="no"/>
+<layer number="5" name="Route5" color="4" fill="4" visible="no" active="no"/>
+<layer number="6" name="Route6" color="1" fill="8" visible="no" active="no"/>
+<layer number="7" name="Route7" color="4" fill="8" visible="no" active="no"/>
+<layer number="8" name="Route8" color="1" fill="2" visible="no" active="no"/>
+<layer number="9" name="Route9" color="4" fill="2" visible="no" active="no"/>
+<layer number="10" name="Route10" color="1" fill="7" visible="no" active="no"/>
+<layer number="11" name="Route11" color="4" fill="7" visible="no" active="no"/>
+<layer number="12" name="Route12" color="1" fill="5" visible="no" active="no"/>
+<layer number="13" name="Route13" color="4" fill="5" visible="no" active="no"/>
+<layer number="14" name="Route14" color="1" fill="6" visible="no" active="no"/>
+<layer number="15" name="Route15" color="4" fill="6" visible="no" active="no"/>
+<layer number="16" name="Bottom" color="1" fill="1" visible="no" active="no"/>
+<layer number="17" name="Pads" color="2" fill="1" visible="no" active="no"/>
+<layer number="18" name="Vias" color="2" fill="1" visible="no" active="no"/>
+<layer number="19" name="Unrouted" color="6" fill="1" visible="no" active="no"/>
+<layer number="20" name="Dimension" color="15" fill="1" visible="no" active="no"/>
+<layer number="21" name="tPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="22" name="bPlace" color="7" fill="1" visible="no" active="no"/>
+<layer number="23" name="tOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="24" name="bOrigins" color="15" fill="1" visible="no" active="no"/>
+<layer number="25" name="tNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="26" name="bNames" color="7" fill="1" visible="no" active="no"/>
+<layer number="27" name="tValues" color="7" fill="1" visible="no" active="no"/>
+<layer number="28" name="bValues" color="7" fill="1" visible="no" active="no"/>
 <layer number="29" name="tStop" color="7" fill="3" visible="no" active="no"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="no"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="no"/>
@@ -44,8 +44,8 @@
 <layer number="34" name="bFinish" color="6" fill="6" visible="no" active="no"/>
 <layer number="35" name="tGlue" color="7" fill="4" visible="no" active="no"/>
 <layer number="36" name="bGlue" color="7" fill="5" visible="no" active="no"/>
-<layer number="37" name="tTest" color="7" fill="1" visible="yes" active="no"/>
-<layer number="38" name="bTest" color="7" fill="1" visible="yes" active="no"/>
+<layer number="37" name="tTest" color="7" fill="1" visible="no" active="no"/>
+<layer number="38" name="bTest" color="7" fill="1" visible="no" active="no"/>
 <layer number="39" name="tKeepout" color="4" fill="11" visible="no" active="no"/>
 <layer number="40" name="bKeepout" color="1" fill="11" visible="no" active="no"/>
 <layer number="41" name="tRestrict" color="4" fill="10" visible="no" active="no"/>
@@ -53,12 +53,16 @@
 <layer number="43" name="vRestrict" color="2" fill="10" visible="no" active="no"/>
 <layer number="44" name="Drills" color="7" fill="1" visible="no" active="no"/>
 <layer number="45" name="Holes" color="7" fill="1" visible="no" active="no"/>
-<layer number="46" name="Milling" color="3" fill="1" visible="yes" active="no"/>
-<layer number="47" name="Measures" color="7" fill="1" visible="yes" active="no"/>
-<layer number="48" name="Document" color="7" fill="1" visible="yes" active="no"/>
-<layer number="49" name="Reference" color="7" fill="1" visible="yes" active="no"/>
-<layer number="51" name="tDocu" color="7" fill="1" visible="yes" active="no"/>
-<layer number="52" name="bDocu" color="7" fill="1" visible="yes" active="no"/>
+<layer number="46" name="Milling" color="3" fill="1" visible="no" active="no"/>
+<layer number="47" name="Measures" color="7" fill="1" visible="no" active="no"/>
+<layer number="48" name="Document" color="7" fill="1" visible="no" active="no"/>
+<layer number="49" name="Reference" color="7" fill="1" visible="no" active="no"/>
+<layer number="50" name="dxf" color="7" fill="1" visible="no" active="no"/>
+<layer number="51" name="tDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="52" name="bDocu" color="7" fill="1" visible="no" active="no"/>
+<layer number="53" name="tGND_GNDA" color="7" fill="9" visible="no" active="no"/>
+<layer number="54" name="bGND_GNDA" color="1" fill="9" visible="no" active="no"/>
+<layer number="56" name="wert" color="7" fill="1" visible="no" active="no"/>
 <layer number="91" name="Nets" color="2" fill="1" visible="yes" active="yes"/>
 <layer number="92" name="Busses" color="1" fill="1" visible="yes" active="yes"/>
 <layer number="93" name="Pins" color="2" fill="1" visible="no" active="yes"/>
@@ -67,6 +71,59 @@
 <layer number="96" name="Values" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="97" name="Info" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="98" name="Guide" color="6" fill="1" visible="yes" active="yes"/>
+<layer number="100" name="Muster" color="7" fill="1" visible="no" active="no"/>
+<layer number="101" name="Patch_Top" color="12" fill="4" visible="yes" active="yes"/>
+<layer number="102" name="Vscore" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="103" name="tMap" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="104" name="Name" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="105" name="tPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="106" name="bPlate" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="107" name="Crop" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="108" name="tBridges" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="109" name="tBPL" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="110" name="bBPL" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="111" name="MPL" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="112" name="tSilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="116" name="Patch_BOT" color="9" fill="4" visible="yes" active="yes"/>
+<layer number="121" name="_tsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="122" name="_bsilk" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="125" name="_tNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="126" name="_bNames" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="127" name="_tValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="128" name="_bValues" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="144" name="Drill_legend" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="151" name="HeatSink" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="152" name="_bDocu" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="200" name="200bmp" color="1" fill="10" visible="no" active="no"/>
+<layer number="201" name="201bmp" color="2" fill="1" visible="no" active="no"/>
+<layer number="202" name="202bmp" color="3" fill="1" visible="no" active="no"/>
+<layer number="203" name="203bmp" color="4" fill="10" visible="yes" active="yes"/>
+<layer number="204" name="204bmp" color="5" fill="10" visible="yes" active="yes"/>
+<layer number="205" name="205bmp" color="6" fill="10" visible="yes" active="yes"/>
+<layer number="206" name="206bmp" color="7" fill="10" visible="yes" active="yes"/>
+<layer number="207" name="207bmp" color="8" fill="10" visible="yes" active="yes"/>
+<layer number="208" name="208bmp" color="9" fill="10" visible="yes" active="yes"/>
+<layer number="209" name="209bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="210" name="210bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="211" name="211bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="212" name="212bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="213" name="213bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="214" name="214bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="215" name="215bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="216" name="216bmp" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="217" name="217bmp" color="18" fill="1" visible="no" active="no"/>
+<layer number="218" name="218bmp" color="19" fill="1" visible="no" active="no"/>
+<layer number="219" name="219bmp" color="20" fill="1" visible="no" active="no"/>
+<layer number="220" name="220bmp" color="21" fill="1" visible="no" active="no"/>
+<layer number="221" name="221bmp" color="22" fill="1" visible="no" active="no"/>
+<layer number="222" name="222bmp" color="23" fill="1" visible="no" active="no"/>
+<layer number="223" name="223bmp" color="24" fill="1" visible="no" active="no"/>
+<layer number="224" name="224bmp" color="25" fill="1" visible="no" active="no"/>
+<layer number="248" name="Housing" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="249" name="Edge" color="7" fill="1" visible="yes" active="yes"/>
+<layer number="250" name="Descript" color="3" fill="1" visible="no" active="no"/>
+<layer number="251" name="SMDround" color="12" fill="11" visible="no" active="no"/>
+<layer number="254" name="cooling" color="7" fill="1" visible="yes" active="yes"/>
 </layers>
 <schematic xreflabel="%F%N/%S.%C%R" xrefpart="/%S.%C%R">
 <libraries>
@@ -19919,61 +19976,6 @@ distributor RS 112-3794</description>
 </deviceset>
 </devicesets>
 </library>
-<library name="con-garry">
-<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
-&lt;a href="www.mpe-connector.de"&gt;Menufacturer&lt;/a&gt;&lt;p&gt;
-&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
-<packages>
-<package name="332-02">
-<description>&lt;b&gt;2 Pin - 2mm Dual Row&lt;/b&gt;&lt;p&gt;
-Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
-<wire x1="-0.85" y1="-1.9" x2="0.85" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="-1.9" x2="0.85" y2="-0.4" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="0.4" x2="0.85" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="0.85" y1="1.9" x2="-0.85" y2="1.9" width="0.2032" layer="21"/>
-<wire x1="-0.85" y1="1.9" x2="-0.85" y2="0.4" width="0.2032" layer="21"/>
-<wire x1="-0.85" y1="-0.4" x2="-0.85" y2="-1.9" width="0.2032" layer="21"/>
-<wire x1="-0.85" y1="0.4" x2="-0.85" y2="-0.4" width="0.2032" layer="21" curve="-129.185"/>
-<wire x1="0.85" y1="-0.4" x2="0.85" y2="0.4" width="0.2032" layer="21" curve="-129.185"/>
-<pad name="1" x="0" y="-1" drill="0.9" diameter="1.27"/>
-<pad name="2" x="0" y="1" drill="0.9" diameter="1.27"/>
-<text x="-0.65" y="-1.75" size="0.3048" layer="21" font="vector">1</text>
-<text x="-0.62" y="-3.81" size="1.27" layer="25">&gt;NAME</text>
-<text x="-0.62" y="2.54" size="1.27" layer="27">&gt;VALUE</text>
-<rectangle x1="-0.25" y1="-1.25" x2="0.25" y2="-0.75" layer="51"/>
-<rectangle x1="-0.25" y1="0.75" x2="0.25" y2="1.25" layer="51"/>
-</package>
-</packages>
-<symbols>
-<symbol name="MV">
-<wire x1="1.27" y1="0" x2="0" y2="0" width="0.6096" layer="94"/>
-<text x="2.54" y="-0.762" size="1.524" layer="95">&gt;NAME</text>
-<text x="-0.762" y="1.397" size="1.778" layer="96">&gt;VALUE</text>
-<pin name="S" x="-2.54" y="0" visible="off" length="short" direction="pas"/>
-</symbol>
-</symbols>
-<devicesets>
-<deviceset name="332-02" prefix="X">
-<description>&lt;b&gt;2 Pin - 2mm Dual Row&lt;/b&gt;&lt;p&gt;
-Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
-<gates>
-<gate name="-1" symbol="MV" x="-10.16" y="0" addlevel="always"/>
-<gate name="-2" symbol="MV" x="10.16" y="0" addlevel="always"/>
-</gates>
-<devices>
-<device name="" package="332-02">
-<connects>
-<connect gate="-1" pin="S" pad="1"/>
-<connect gate="-2" pin="S" pad="2"/>
-</connects>
-<technologies>
-<technology name=""/>
-</technologies>
-</device>
-</devices>
-</deviceset>
-</devicesets>
-</library>
 <library name="switch-tact">
 <description>&lt;b&gt;Diptronics THMD &amp; SMD tact switches&lt;/b&gt;
 &lt;p&gt;&lt;ul&gt;
@@ -20135,6 +20137,96 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </deviceset>
 </devicesets>
 </library>
+<library name="pinhead">
+<description>&lt;b&gt;Pin Header Connectors&lt;/b&gt;&lt;p&gt;
+&lt;author&gt;Created by librarian@cadsoft.de&lt;/author&gt;</description>
+<packages>
+<package name="1X02">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-1.905" y1="1.27" x2="-0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="1.27" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="-0.635" x2="-0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="-1.905" y1="1.27" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="-0.635" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="-0.635" y1="-1.27" x2="-1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="0.635" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="1.27" x2="1.905" y2="1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="1.27" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="2.54" y2="-0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-0.635" x2="1.905" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="1.905" y1="-1.27" x2="0.635" y2="-1.27" width="0.1524" layer="21"/>
+<wire x1="0.635" y1="-1.27" x2="0" y2="-0.635" width="0.1524" layer="21"/>
+<pad name="1" x="-1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="0" drill="1.016" shape="long" rot="R90"/>
+<text x="-2.6162" y="1.8288" size="1.27" layer="25" ratio="10">&gt;NAME</text>
+<text x="-2.54" y="-3.175" size="1.27" layer="27">&gt;VALUE</text>
+<rectangle x1="-1.524" y1="-0.254" x2="-1.016" y2="0.254" layer="51"/>
+<rectangle x1="1.016" y1="-0.254" x2="1.524" y2="0.254" layer="51"/>
+</package>
+<package name="1X02/90">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<wire x1="-2.54" y1="-1.905" x2="0" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="0" y1="-1.905" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="0" y1="0.635" x2="-2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="-2.54" y1="0.635" x2="-2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="-1.27" y1="6.985" x2="-1.27" y2="1.27" width="0.762" layer="21"/>
+<wire x1="0" y1="-1.905" x2="2.54" y2="-1.905" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="-1.905" x2="2.54" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="2.54" y1="0.635" x2="0" y2="0.635" width="0.1524" layer="21"/>
+<wire x1="1.27" y1="6.985" x2="1.27" y2="1.27" width="0.762" layer="21"/>
+<pad name="1" x="-1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<pad name="2" x="1.27" y="-3.81" drill="1.016" shape="long" rot="R90"/>
+<text x="-3.175" y="-3.81" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="4.445" y="-3.81" size="1.27" layer="27" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.651" y1="0.635" x2="-0.889" y2="1.143" layer="21"/>
+<rectangle x1="0.889" y1="0.635" x2="1.651" y2="1.143" layer="21"/>
+<rectangle x1="-1.651" y1="-2.921" x2="-0.889" y2="-1.905" layer="21"/>
+<rectangle x1="0.889" y1="-2.921" x2="1.651" y2="-1.905" layer="21"/>
+</package>
+</packages>
+<symbols>
+<symbol name="PINHD2">
+<wire x1="-6.35" y1="-2.54" x2="1.27" y2="-2.54" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="-2.54" x2="1.27" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="1.27" y1="5.08" x2="-6.35" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-6.35" y1="5.08" x2="-6.35" y2="-2.54" width="0.4064" layer="94"/>
+<text x="-6.35" y="5.715" size="1.778" layer="95">&gt;NAME</text>
+<text x="-6.35" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<pin name="1" x="-2.54" y="2.54" visible="pad" length="short" direction="pas" function="dot"/>
+<pin name="2" x="-2.54" y="0" visible="pad" length="short" direction="pas" function="dot"/>
+</symbol>
+</symbols>
+<devicesets>
+<deviceset name="PINHD-1X2" prefix="JP" uservalue="yes">
+<description>&lt;b&gt;PIN HEADER&lt;/b&gt;</description>
+<gates>
+<gate name="G$1" symbol="PINHD2" x="0" y="0"/>
+</gates>
+<devices>
+<device name="" package="1X02">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+<device name="/90" package="1X02/90">
+<connects>
+<connect gate="G$1" pin="1" pad="1"/>
+<connect gate="G$1" pin="2" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+</devicesets>
+</library>
 </libraries>
 <attributes>
 </attributes>
@@ -20146,7 +20238,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </classes>
 <parts>
 <part name="U$1" library="Lynx components" deviceset="STM32F415RGT6" device=""/>
-<part name="U$2" library="Lynx components" deviceset="SWD-HEADER" device=""/>
+<part name="SWD-HEADER" library="Lynx components" deviceset="SWD-HEADER" device=""/>
 <part name="SPI1-DEBUG" library="con-lstb" deviceset="MA04-1" device=""/>
 <part name="SPI2-DEBUG" library="con-lstb" deviceset="MA04-1" device=""/>
 <part name="U$3" library="Lynx components" deviceset="LTC6946" device=""/>
@@ -20253,7 +20345,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="C23" library="rcl" deviceset="C-EU" device="C0603" value="4.7uF">
 <attribute name="ARM" value=""/>
 </part>
-<part name="IC1" library="linear" deviceset="MCP1703" device="DB"/>
+<part name="3V3-REG" library="linear" deviceset="MCP1703" device="DB"/>
 <part name="DAC1-DB" library="con-lstb" deviceset="MA08-1" device=""/>
 <part name="DAC2-DB" library="con-lstb" deviceset="MA08-1" device=""/>
 <part name="C24" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
@@ -20295,9 +20387,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="SUPPLY40" library="supply2" deviceset="GND" device=""/>
 <part name="C35" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="C36" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
-<part name="X2" library="con-garry" deviceset="332-02" device=""/>
-<part name="X3" library="con-garry" deviceset="332-02" device=""/>
-<part name="SUPPLY41" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY26" library="supply2" deviceset="GND" device=""/>
 <part name="GND1" library="testpad" deviceset="PTR1" device="PAD1-13Y" value="PTR1PAD1-13Y"/>
 <part name="SUPPLY27" library="supply2" deviceset="GND" device=""/>
@@ -20344,11 +20433,28 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <part name="BBMI" library="testpad" deviceset="PTR1" device="PAD1-13Y" value="PTR1PAD1-13Y"/>
 <part name="BBPQ" library="testpad" deviceset="PTR1" device="PAD1-13Y" value="PTR1PAD1-13Y"/>
 <part name="BBMQ" library="testpad" deviceset="PTR1" device="PAD1-13Y" value="PTR1PAD1-13Y"/>
+<part name="JP4" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP1" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="5V-REG" library="linear" deviceset="MCP1703" device="DB"/>
+<part name="SUPPLY41" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY55" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY56" library="supply2" deviceset="GND" device=""/>
+<part name="C43" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="C44" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
+<part name="JP2" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP3" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP5" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP6" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP7" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP8" library="pinhead" deviceset="PINHD-1X2" device=""/>
+<part name="JP9" library="pinhead" deviceset="PINHD-1X2" device=""/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="19.05" y="156.21" size="1.778" layer="91">SPI2</text>
+<text x="-214.63" y="-160.02" size="1.778" layer="91">Alternate power supply in</text>
+<text x="-250.19" y="-153.67" size="1.778" layer="91">supply socket</text>
 </plain>
 <instances>
 <instance part="U$1" gate="POWER" x="-187.96" y="-3.81"/>
@@ -20357,7 +20463,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <instance part="U$1" gate="PORT_B" x="-226.06" y="-3.81"/>
 <instance part="U$1" gate="FUNCTIONS" x="-187.96" y="76.2"/>
 <instance part="U$1" gate="G$1" x="-229.87" y="-38.1"/>
-<instance part="U$2" gate="G$1" x="-177.8" y="144.78" rot="R270"/>
+<instance part="SWD-HEADER" gate="G$1" x="-177.8" y="144.78" rot="R270"/>
 <instance part="SPI1-DEBUG" gate="1" x="-135.89" y="143.51" rot="R270"/>
 <instance part="SPI2-DEBUG" gate="1" x="-153.67" y="143.51" rot="R270"/>
 <instance part="U$3" gate="G$1" x="62.23" y="142.24"/>
@@ -20492,7 +20598,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="VALUE" x="-161.544" y="-56.261" size="1.778" layer="96" rot="R180"/>
 <attribute name="ARM" x="-161.29" y="-60.96" size="1.778" layer="96" rot="R180" display="off"/>
 </instance>
-<instance part="IC1" gate="G$1" x="-204.47" y="-74.93"/>
+<instance part="3V3-REG" gate="G$1" x="-212.09" y="-106.68"/>
 <instance part="DAC1-DB" gate="1" x="-149.86" y="54.61" rot="R180"/>
 <instance part="DAC2-DB" gate="1" x="-138.43" y="34.29" rot="R180"/>
 <instance part="C24" gate="G$1" x="-34.29" y="29.21" rot="MR180"/>
@@ -20533,16 +20639,11 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <attribute name="ARM" x="83.82" y="134.62" size="1.778" layer="96" rot="R90" display="off"/>
 </instance>
 <instance part="SUPPLY37" gate="GND" x="90.17" y="132.08"/>
-<instance part="SUPPLY38" gate="GND" x="-204.47" y="-91.44"/>
-<instance part="SUPPLY39" gate="GND" x="-219.71" y="-91.44"/>
-<instance part="SUPPLY40" gate="GND" x="-189.23" y="-91.44"/>
-<instance part="C35" gate="G$1" x="-189.23" y="-82.55"/>
-<instance part="C36" gate="G$1" x="-219.71" y="-82.55"/>
-<instance part="X2" gate="-1" x="-227.33" y="-109.22"/>
-<instance part="X2" gate="-2" x="-227.33" y="-115.57"/>
-<instance part="X3" gate="-1" x="-227.33" y="-121.92"/>
-<instance part="X3" gate="-2" x="-227.33" y="-128.27"/>
-<instance part="SUPPLY41" gate="GND" x="-232.41" y="-133.35"/>
+<instance part="SUPPLY38" gate="GND" x="-212.09" y="-123.19"/>
+<instance part="SUPPLY39" gate="GND" x="-227.33" y="-123.19"/>
+<instance part="SUPPLY40" gate="GND" x="-196.85" y="-123.19"/>
+<instance part="C35" gate="G$1" x="-196.85" y="-114.3"/>
+<instance part="C36" gate="G$1" x="-227.33" y="-114.3"/>
 <instance part="SUPPLY26" gate="GND" x="-153.67" y="170.18" rot="R180"/>
 <instance part="GND1" gate="G$1" x="-153.67" y="157.48"/>
 <instance part="SUPPLY27" gate="GND" x="-135.89" y="168.91" rot="R180"/>
@@ -20576,14 +20677,14 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <instance part="+3V15" gate="G$1" x="60.96" y="58.42" smashed="yes">
 <attribute name="VALUE" x="64.77" y="60.96" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="IC3" gate="G$1" x="25.4" y="-29.21"/>
-<instance part="+3V16" gate="G$1" x="45.72" y="-31.75" smashed="yes" rot="R270">
-<attribute name="VALUE" x="48.26" y="-35.56" size="1.778" layer="96" rot="R90"/>
+<instance part="IC3" gate="G$1" x="-143.51" y="-143.51"/>
+<instance part="+3V16" gate="G$1" x="-123.19" y="-146.05" smashed="yes" rot="R270">
+<attribute name="VALUE" x="-120.65" y="-149.86" size="1.778" layer="96" rot="R90"/>
 </instance>
-<instance part="SUPPLY50" gate="GND" x="55.88" y="-43.18" rot="MR0"/>
-<instance part="C41" gate="G$1" x="2.54" y="-27.94"/>
-<instance part="C42" gate="G$1" x="55.88" y="-30.48" rot="R180"/>
-<instance part="SUPPLY51" gate="GND" x="3.81" y="-21.59" rot="MR90"/>
+<instance part="SUPPLY50" gate="GND" x="-113.03" y="-157.48" rot="MR0"/>
+<instance part="C41" gate="G$1" x="-166.37" y="-142.24"/>
+<instance part="C42" gate="G$1" x="-113.03" y="-144.78" rot="R180"/>
+<instance part="SUPPLY51" gate="GND" x="-165.1" y="-135.89" rot="MR90"/>
 <instance part="SUPPLY52" gate="GND" x="-33.02" y="-6.35"/>
 <instance part="SUPPLY53" gate="GND" x="-33.02" y="-50.8" rot="R180"/>
 <instance part="R11" gate="G$1" x="102.87" y="-21.59" rot="R90"/>
@@ -20594,11 +20695,26 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <instance part="SUPPLY54" gate="GND" x="102.87" y="-48.26" rot="MR0"/>
 <instance part="I_BUF" gate="G$1" x="8.89" y="27.94" rot="R180"/>
 <instance part="Q_BUF" gate="G$1" x="8.89" y="-86.36"/>
-<instance part="-3V3" gate="G$1" x="66.04" y="-21.59" rot="R90"/>
+<instance part="-3V3" gate="G$1" x="-102.87" y="-135.89" rot="R90"/>
 <instance part="BBPI" gate="G$1" x="138.43" y="68.58" rot="R90"/>
 <instance part="BBMI" gate="G$1" x="138.43" y="63.5" rot="R90"/>
 <instance part="BBPQ" gate="G$1" x="138.43" y="55.88" rot="R90"/>
 <instance part="BBMQ" gate="G$1" x="138.43" y="50.8" rot="R90"/>
+<instance part="JP4" gate="G$1" x="-204.47" y="-147.32" rot="R180"/>
+<instance part="JP1" gate="G$1" x="-189.23" y="-97.79" rot="R90"/>
+<instance part="5V-REG" gate="G$1" x="-137.16" y="-106.68"/>
+<instance part="SUPPLY41" gate="GND" x="-137.16" y="-123.19"/>
+<instance part="SUPPLY55" gate="GND" x="-152.4" y="-123.19"/>
+<instance part="SUPPLY56" gate="GND" x="-121.92" y="-123.19"/>
+<instance part="C43" gate="G$1" x="-121.92" y="-114.3"/>
+<instance part="C44" gate="G$1" x="-152.4" y="-114.3"/>
+<instance part="JP2" gate="G$1" x="-114.3" y="-97.79" rot="R90"/>
+<instance part="JP3" gate="G$1" x="-204.47" y="-137.16" rot="R180"/>
+<instance part="JP5" gate="G$1" x="-245.11" y="-142.24" rot="R180"/>
+<instance part="JP6" gate="G$1" x="100.33" y="-77.47" rot="R270"/>
+<instance part="JP7" gate="G$1" x="102.87" y="-102.87" rot="R90"/>
+<instance part="JP8" gate="G$1" x="100.33" y="44.45" rot="R270"/>
+<instance part="JP9" gate="G$1" x="102.87" y="19.05" rot="R90"/>
 </instances>
 <busses>
 </busses>
@@ -21052,7 +21168,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="SUPPLY14" gate="GND" pin="GND"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="GND"/>
+<pinref part="SWD-HEADER" gate="G$1" pin="GND"/>
 <wire x1="-172.72" y1="134.62" x2="-172.72" y2="127" width="0.1524" layer="91"/>
 <pinref part="SUPPLY15" gate="GND" pin="GND"/>
 </segment>
@@ -21230,25 +21346,19 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="123.19" y1="127" x2="127" y2="127" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="GND"/>
+<pinref part="3V3-REG" gate="G$1" pin="GND"/>
 <pinref part="SUPPLY38" gate="GND" pin="GND"/>
-<wire x1="-204.47" y1="-82.55" x2="-204.47" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-212.09" y1="-114.3" x2="-212.09" y2="-120.65" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C35" gate="G$1" pin="2"/>
 <pinref part="SUPPLY40" gate="GND" pin="GND"/>
-<wire x1="-189.23" y1="-87.63" x2="-189.23" y2="-88.9" width="0.1524" layer="91"/>
+<wire x1="-196.85" y1="-119.38" x2="-196.85" y2="-120.65" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="C36" gate="G$1" pin="2"/>
 <pinref part="SUPPLY39" gate="GND" pin="GND"/>
-<wire x1="-219.71" y1="-87.63" x2="-219.71" y2="-88.9" width="0.1524" layer="91"/>
-</segment>
-<segment>
-<pinref part="X3" gate="-2" pin="S"/>
-<wire x1="-229.87" y1="-128.27" x2="-232.41" y2="-128.27" width="0.1524" layer="91"/>
-<wire x1="-232.41" y1="-128.27" x2="-232.41" y2="-130.81" width="0.1524" layer="91"/>
-<pinref part="SUPPLY41" gate="GND" pin="GND"/>
+<wire x1="-227.33" y1="-119.38" x2="-227.33" y2="-120.65" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="GND1" gate="G$1" pin="TP"/>
@@ -21320,17 +21430,17 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="GND"/>
-<wire x1="38.1" y1="-36.83" x2="55.88" y2="-36.83" width="0.1524" layer="91"/>
-<wire x1="55.88" y1="-36.83" x2="55.88" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="-130.81" y1="-151.13" x2="-113.03" y2="-151.13" width="0.1524" layer="91"/>
+<wire x1="-113.03" y1="-151.13" x2="-113.03" y2="-154.94" width="0.1524" layer="91"/>
 <pinref part="SUPPLY50" gate="GND" pin="GND"/>
 <pinref part="C42" gate="G$1" pin="+"/>
-<wire x1="55.88" y1="-33.02" x2="55.88" y2="-36.83" width="0.1524" layer="91"/>
-<junction x="55.88" y="-36.83"/>
+<wire x1="-113.03" y1="-147.32" x2="-113.03" y2="-151.13" width="0.1524" layer="91"/>
+<junction x="-113.03" y="-151.13"/>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="LV"/>
 <pinref part="SUPPLY51" gate="GND" pin="GND"/>
-<wire x1="10.16" y1="-21.59" x2="6.35" y2="-21.59" width="0.1524" layer="91"/>
+<wire x1="-158.75" y1="-135.89" x2="-162.56" y2="-135.89" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="DAC1" gate="G$1" pin="!I_OUT!"/>
@@ -21348,6 +21458,36 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="R12" gate="G$1" pin="1"/>
 <wire x1="102.87" y1="-41.91" x2="102.87" y2="-45.72" width="0.1524" layer="91"/>
 <pinref part="SUPPLY54" gate="GND" pin="GND"/>
+</segment>
+<segment>
+<pinref part="5V-REG" gate="G$1" pin="GND"/>
+<pinref part="SUPPLY41" gate="GND" pin="GND"/>
+<wire x1="-137.16" y1="-114.3" x2="-137.16" y2="-120.65" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C43" gate="G$1" pin="2"/>
+<pinref part="SUPPLY56" gate="GND" pin="GND"/>
+<wire x1="-121.92" y1="-119.38" x2="-121.92" y2="-120.65" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="C44" gate="G$1" pin="2"/>
+<pinref part="SUPPLY55" gate="GND" pin="GND"/>
+<wire x1="-152.4" y1="-119.38" x2="-152.4" y2="-120.65" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="1"/>
+<wire x1="-201.93" y1="-139.7" x2="-194.31" y2="-139.7" width="0.1524" layer="91"/>
+<label x="-194.31" y="-139.7" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="1"/>
+<wire x1="-201.93" y1="-149.86" x2="-194.31" y2="-149.86" width="0.1524" layer="91"/>
+<label x="-194.31" y="-149.86" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP5" gate="G$1" pin="1"/>
+<wire x1="-242.57" y1="-144.78" x2="-232.41" y2="-144.78" width="0.1524" layer="91"/>
+<label x="-232.41" y="-144.78" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$1" class="0">
@@ -21373,14 +21513,15 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="165.1" y="93.98" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="82.55" y1="53.34" x2="93.98" y2="53.34" width="0.1524" layer="91"/>
-<label x="93.98" y="53.34" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="+OUT"/>
-</segment>
-<segment>
 <pinref part="BBPI" gate="G$1" pin="TP"/>
 <wire x1="135.89" y1="68.58" x2="128.27" y2="68.58" width="0.1524" layer="91"/>
 <label x="128.27" y="69.85" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP9" gate="G$1" pin="2"/>
+<wire x1="102.87" y1="16.51" x2="102.87" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="10.16" x2="110.49" y2="10.16" width="0.1524" layer="91"/>
+<label x="109.22" y="10.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BBMI" class="0">
@@ -21390,14 +21531,15 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="165.1" y="88.9" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="82.55" y1="10.16" x2="92.71" y2="10.16" width="0.1524" layer="91"/>
-<label x="92.71" y="10.16" size="1.778" layer="95"/>
-<pinref part="U$4" gate="G$1" pin="-OUT"/>
-</segment>
-<segment>
 <pinref part="BBMI" gate="G$1" pin="TP"/>
 <wire x1="135.89" y1="63.5" x2="128.27" y2="63.5" width="0.1524" layer="91"/>
 <label x="128.27" y="64.77" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP8" gate="G$1" pin="1"/>
+<wire x1="102.87" y1="46.99" x2="102.87" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="53.34" x2="109.22" y2="53.34" width="0.1524" layer="91"/>
+<label x="109.22" y="53.34" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BBPQ" class="0">
@@ -21407,14 +21549,15 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="165.1" y="78.74" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="82.55" y1="-111.76" x2="93.98" y2="-111.76" width="0.1524" layer="91"/>
-<label x="93.98" y="-111.76" size="1.778" layer="95"/>
-<pinref part="U$5" gate="G$1" pin="+OUT"/>
-</segment>
-<segment>
 <pinref part="BBPQ" gate="G$1" pin="TP"/>
 <wire x1="135.89" y1="55.88" x2="128.27" y2="55.88" width="0.1524" layer="91"/>
 <label x="128.27" y="57.15" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP7" gate="G$1" pin="2"/>
+<wire x1="102.87" y1="-105.41" x2="102.87" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="-111.76" x2="109.22" y2="-111.76" width="0.1524" layer="91"/>
+<label x="109.22" y="-111.76" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="BBMQ" class="0">
@@ -21424,14 +21567,15 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <label x="165.1" y="73.66" size="1.778" layer="95" rot="R180"/>
 </segment>
 <segment>
-<wire x1="82.55" y1="-68.58" x2="93.98" y2="-68.58" width="0.1524" layer="91"/>
-<label x="93.98" y="-68.58" size="1.778" layer="95"/>
-<pinref part="U$5" gate="G$1" pin="-OUT"/>
-</segment>
-<segment>
 <pinref part="BBMQ" gate="G$1" pin="TP"/>
 <wire x1="135.89" y1="50.8" x2="128.27" y2="50.8" width="0.1524" layer="91"/>
 <label x="128.27" y="52.07" size="1.778" layer="95" rot="R180"/>
+</segment>
+<segment>
+<pinref part="JP6" gate="G$1" pin="1"/>
+<wire x1="102.87" y1="-74.93" x2="102.87" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="102.87" y1="-68.58" x2="109.22" y2="-68.58" width="0.1524" layer="91"/>
+<label x="109.22" y="-68.58" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$2" class="0">
@@ -21547,16 +21691,10 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="-93.98" y1="-50.8" x2="-99.06" y2="-50.8" width="0.1524" layer="91"/>
 <label x="-99.06" y="-49.53" size="1.778" layer="95" rot="R180"/>
 </segment>
-</net>
-<net name="DAC_SLEEP" class="0">
 <segment>
-<pinref part="DAC2" gate="G$1" pin="SLEEP"/>
-<pinref part="DAC1" gate="G$1" pin="SLEEP"/>
-<wire x1="-73.66" y1="-38.1" x2="-73.66" y2="-29.21" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="-29.21" x2="-73.66" y2="-20.32" width="0.1524" layer="91"/>
-<wire x1="-73.66" y1="-29.21" x2="-80.01" y2="-29.21" width="0.1524" layer="91"/>
-<label x="-80.01" y="-27.94" size="1.778" layer="95" rot="R180"/>
-<junction x="-73.66" y="-29.21"/>
+<pinref part="U$1" gate="PORT_A" pin="PA12"/>
+<wire x1="-215.9" y1="29.21" x2="-210.82" y2="29.21" width="0.1524" layer="91"/>
+<label x="-210.82" y="29.21" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+3V3" class="0">
@@ -21589,7 +21727,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <junction x="-175.26" y="11.43"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="VDD_TARGET"/>
+<pinref part="SWD-HEADER" gate="G$1" pin="VDD_TARGET"/>
 <wire x1="-170.18" y1="134.62" x2="-170.18" y2="127" width="0.1524" layer="91"/>
 <pinref part="+3V5" gate="G$1" pin="+3V3"/>
 </segment>
@@ -21705,15 +21843,6 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <junction x="-29.21" y="-92.71"/>
 </segment>
 <segment>
-<wire x1="-194.31" y1="-74.93" x2="-189.23" y2="-74.93" width="0.1524" layer="91"/>
-<wire x1="-189.23" y1="-74.93" x2="-185.42" y2="-74.93" width="0.1524" layer="91"/>
-<wire x1="-189.23" y1="-74.93" x2="-189.23" y2="-80.01" width="0.1524" layer="91"/>
-<pinref part="IC1" gate="G$1" pin="VO"/>
-<pinref part="C35" gate="G$1" pin="1"/>
-<label x="-184.15" y="-74.93" size="1.778" layer="95"/>
-<junction x="-189.23" y="-74.93"/>
-</segment>
-<segment>
 <pinref part="C30" gate="G$1" pin="1"/>
 <wire x1="71.12" y1="92.71" x2="71.12" y2="93.98" width="0.1524" layer="91"/>
 <wire x1="71.12" y1="93.98" x2="76.2" y2="93.98" width="0.1524" layer="91"/>
@@ -21744,7 +21873,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="IC3" gate="G$1" pin="V+"/>
-<wire x1="38.1" y1="-31.75" x2="43.18" y2="-31.75" width="0.1524" layer="91"/>
+<wire x1="-130.81" y1="-146.05" x2="-125.73" y2="-146.05" width="0.1524" layer="91"/>
 <pinref part="+3V16" gate="G$1" pin="+3V3"/>
 </segment>
 <segment>
@@ -21756,6 +21885,17 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="R11" gate="G$1" pin="2"/>
 <wire x1="102.87" y1="-16.51" x2="102.87" y2="-12.7" width="0.1524" layer="91"/>
 <pinref part="+3V17" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="JP1" gate="G$1" pin="2"/>
+<wire x1="-189.23" y1="-100.33" x2="-189.23" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-189.23" y1="-106.68" x2="-181.61" y2="-106.68" width="0.1524" layer="91"/>
+<label x="-181.61" y="-106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP3" gate="G$1" pin="2"/>
+<wire x1="-201.93" y1="-137.16" x2="-194.31" y2="-137.16" width="0.1524" layer="91"/>
+<label x="-194.31" y="-137.16" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -21808,6 +21948,17 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <junction x="198.12" y="105.41"/>
 <junction x="203.2" y="105.41"/>
 <junction x="200.66" y="111.76"/>
+</segment>
+<segment>
+<pinref part="JP2" gate="G$1" pin="2"/>
+<wire x1="-114.3" y1="-100.33" x2="-114.3" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-114.3" y1="-106.68" x2="-106.68" y2="-106.68" width="0.1524" layer="91"/>
+<label x="-106.68" y="-106.68" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="JP4" gate="G$1" pin="2"/>
+<wire x1="-201.93" y1="-147.32" x2="-194.31" y2="-147.32" width="0.1524" layer="91"/>
+<label x="-194.31" y="-147.32" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="STAT1-GR" class="0">
@@ -21899,7 +22050,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <junction x="-172.72" y="78.74"/>
 </segment>
 <segment>
-<pinref part="U$2" gate="G$1" pin="NRST"/>
+<pinref part="SWD-HEADER" gate="G$1" pin="NRST"/>
 <wire x1="-182.88" y1="134.62" x2="-182.88" y2="127" width="0.1524" layer="91"/>
 <label x="-182.88" y="127" size="1.778" layer="95" rot="R270"/>
 </segment>
@@ -21913,7 +22064,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </net>
 <net name="SWCLK" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="SWCLK"/>
+<pinref part="SWD-HEADER" gate="G$1" pin="SWCLK"/>
 <wire x1="-180.34" y1="134.62" x2="-180.34" y2="127" width="0.1524" layer="91"/>
 <label x="-180.34" y="127" size="1.778" layer="95" rot="R270"/>
 </segment>
@@ -21925,7 +22076,7 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </net>
 <net name="SWDIO" class="0">
 <segment>
-<pinref part="U$2" gate="G$1" pin="SWDIO"/>
+<pinref part="SWD-HEADER" gate="G$1" pin="SWDIO"/>
 <wire x1="-177.8" y1="134.62" x2="-177.8" y2="127" width="0.1524" layer="91"/>
 <label x="-177.8" y="127" size="1.778" layer="95" rot="R270"/>
 </segment>
@@ -22087,29 +22238,29 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <wire x1="81.28" y1="134.62" x2="80.01" y2="134.62" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="BATTERY-OUT" class="0">
+<net name="POWER-IN" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="VI"/>
-<wire x1="-214.63" y1="-74.93" x2="-219.71" y2="-74.93" width="0.1524" layer="91"/>
-<wire x1="-219.71" y1="-74.93" x2="-223.52" y2="-74.93" width="0.1524" layer="91"/>
-<wire x1="-219.71" y1="-74.93" x2="-219.71" y2="-80.01" width="0.1524" layer="91"/>
+<pinref part="3V3-REG" gate="G$1" pin="VI"/>
+<wire x1="-222.25" y1="-106.68" x2="-227.33" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-227.33" y1="-106.68" x2="-231.14" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-227.33" y1="-106.68" x2="-227.33" y2="-111.76" width="0.1524" layer="91"/>
 <pinref part="C36" gate="G$1" pin="1"/>
-<label x="-223.52" y="-73.66" size="1.778" layer="95" rot="R180"/>
-<junction x="-219.71" y="-74.93"/>
+<label x="-231.14" y="-105.41" size="1.778" layer="95" rot="R180"/>
+<junction x="-227.33" y="-106.68"/>
 </segment>
 <segment>
-<pinref part="X2" gate="-1" pin="S"/>
-<wire x1="-229.87" y1="-109.22" x2="-232.41" y2="-109.22" width="0.1524" layer="91"/>
-<label x="-232.41" y="-107.95" size="1.778" layer="95" rot="R180"/>
+<pinref part="5V-REG" gate="G$1" pin="VI"/>
+<wire x1="-147.32" y1="-106.68" x2="-152.4" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="-106.68" x2="-156.21" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-152.4" y1="-106.68" x2="-152.4" y2="-111.76" width="0.1524" layer="91"/>
+<pinref part="C44" gate="G$1" pin="1"/>
+<label x="-156.21" y="-105.41" size="1.778" layer="95" rot="R180"/>
+<junction x="-152.4" y="-106.68"/>
 </segment>
-</net>
-<net name="N$43" class="0">
 <segment>
-<pinref part="X2" gate="-2" pin="S"/>
-<wire x1="-229.87" y1="-115.57" x2="-232.41" y2="-115.57" width="0.1524" layer="91"/>
-<wire x1="-232.41" y1="-115.57" x2="-232.41" y2="-121.92" width="0.1524" layer="91"/>
-<pinref part="X3" gate="-1" pin="S"/>
-<wire x1="-232.41" y1="-121.92" x2="-229.87" y2="-121.92" width="0.1524" layer="91"/>
+<pinref part="JP5" gate="G$1" pin="2"/>
+<wire x1="-242.57" y1="-142.24" x2="-232.41" y2="-142.24" width="0.1524" layer="91"/>
+<label x="-232.41" y="-142.24" size="1.778" layer="95"/>
 </segment>
 </net>
 <net name="N$31" class="0">
@@ -22195,31 +22346,31 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 </segment>
 <segment>
 <pinref part="-3V3" gate="G$1" pin="TP"/>
-<wire x1="63.5" y1="-21.59" x2="55.88" y2="-21.59" width="0.1524" layer="91"/>
+<wire x1="-105.41" y1="-135.89" x2="-113.03" y2="-135.89" width="0.1524" layer="91"/>
 <pinref part="IC3" gate="G$1" pin="VOUT"/>
-<wire x1="38.1" y1="-21.59" x2="55.88" y2="-21.59" width="0.1524" layer="91"/>
-<label x="48.26" y="-19.05" size="1.778" layer="95"/>
+<wire x1="-130.81" y1="-135.89" x2="-113.03" y2="-135.89" width="0.1524" layer="91"/>
+<label x="-120.65" y="-133.35" size="1.778" layer="95"/>
 <pinref part="C42" gate="G$1" pin="-"/>
-<wire x1="55.88" y1="-25.4" x2="55.88" y2="-21.59" width="0.1524" layer="91"/>
-<junction x="55.88" y="-21.59"/>
+<wire x1="-113.03" y1="-139.7" x2="-113.03" y2="-135.89" width="0.1524" layer="91"/>
+<junction x="-113.03" y="-135.89"/>
 </segment>
 </net>
 <net name="N$34" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="CAP-"/>
-<wire x1="10.16" y1="-31.75" x2="8.89" y2="-31.75" width="0.1524" layer="91"/>
-<wire x1="8.89" y1="-31.75" x2="8.89" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-158.75" y1="-146.05" x2="-160.02" y2="-146.05" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-146.05" x2="-160.02" y2="-147.32" width="0.1524" layer="91"/>
 <pinref part="C41" gate="G$1" pin="-"/>
-<wire x1="8.89" y1="-33.02" x2="2.54" y2="-33.02" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-147.32" x2="-166.37" y2="-147.32" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="N$37" class="0">
 <segment>
 <pinref part="IC3" gate="G$1" pin="CAP+"/>
-<wire x1="10.16" y1="-26.67" x2="8.89" y2="-26.67" width="0.1524" layer="91"/>
-<wire x1="8.89" y1="-26.67" x2="8.89" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-158.75" y1="-140.97" x2="-160.02" y2="-140.97" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-140.97" x2="-160.02" y2="-139.7" width="0.1524" layer="91"/>
 <pinref part="C41" gate="G$1" pin="+"/>
-<wire x1="8.89" y1="-25.4" x2="2.54" y2="-25.4" width="0.1524" layer="91"/>
+<wire x1="-160.02" y1="-139.7" x2="-166.37" y2="-139.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="GND1" class="0">
@@ -22254,6 +22405,78 @@ Source: www.mpe-connector.de / garry_shortform_2012.pdf</description>
 <pinref part="R5" gate="G$1" pin="1"/>
 <junction x="8.89" y="-66.04"/>
 <junction x="8.89" y="-74.93"/>
+</segment>
+</net>
+<net name="N$38" class="0">
+<segment>
+<pinref part="3V3-REG" gate="G$1" pin="VO"/>
+<pinref part="C35" gate="G$1" pin="1"/>
+<wire x1="-201.93" y1="-106.68" x2="-196.85" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-196.85" y1="-106.68" x2="-196.85" y2="-111.76" width="0.1524" layer="91"/>
+<pinref part="JP1" gate="G$1" pin="1"/>
+<wire x1="-196.85" y1="-106.68" x2="-191.77" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-191.77" y1="-106.68" x2="-191.77" y2="-100.33" width="0.1524" layer="91"/>
+<junction x="-196.85" y="-106.68"/>
+</segment>
+</net>
+<net name="N$39" class="0">
+<segment>
+<pinref part="5V-REG" gate="G$1" pin="VO"/>
+<pinref part="C43" gate="G$1" pin="1"/>
+<wire x1="-127" y1="-106.68" x2="-121.92" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-121.92" y1="-106.68" x2="-121.92" y2="-111.76" width="0.1524" layer="91"/>
+<pinref part="JP2" gate="G$1" pin="1"/>
+<wire x1="-121.92" y1="-106.68" x2="-116.84" y2="-106.68" width="0.1524" layer="91"/>
+<wire x1="-116.84" y1="-106.68" x2="-116.84" y2="-100.33" width="0.1524" layer="91"/>
+<junction x="-121.92" y="-106.68"/>
+</segment>
+</net>
+<net name="N$15" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="-OUT"/>
+<pinref part="JP6" gate="G$1" pin="2"/>
+<wire x1="82.55" y1="-68.58" x2="100.33" y2="-68.58" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="-68.58" x2="100.33" y2="-74.93" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$28" class="0">
+<segment>
+<pinref part="U$5" gate="G$1" pin="+OUT"/>
+<pinref part="JP7" gate="G$1" pin="1"/>
+<wire x1="82.55" y1="-111.76" x2="100.33" y2="-111.76" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="-111.76" x2="100.33" y2="-105.41" width="0.1524" layer="91"/>
+</segment>
+</net>
+<net name="N$40" class="0">
+<segment>
+<pinref part="JP8" gate="G$1" pin="2"/>
+<wire x1="82.55" y1="53.34" x2="100.33" y2="53.34" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="53.34" x2="100.33" y2="46.99" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="+OUT"/>
+</segment>
+</net>
+<net name="N$41" class="0">
+<segment>
+<pinref part="JP9" gate="G$1" pin="1"/>
+<wire x1="82.55" y1="10.16" x2="100.33" y2="10.16" width="0.1524" layer="91"/>
+<wire x1="100.33" y1="10.16" x2="100.33" y2="16.51" width="0.1524" layer="91"/>
+<pinref part="U$4" gate="G$1" pin="-OUT"/>
+</segment>
+</net>
+<net name="DAC-SLEEP" class="0">
+<segment>
+<pinref part="DAC2" gate="G$1" pin="SLEEP"/>
+<pinref part="DAC1" gate="G$1" pin="SLEEP"/>
+<wire x1="-73.66" y1="-38.1" x2="-73.66" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-29.21" x2="-73.66" y2="-20.32" width="0.1524" layer="91"/>
+<wire x1="-73.66" y1="-29.21" x2="-80.01" y2="-29.21" width="0.1524" layer="91"/>
+<label x="-80.01" y="-27.94" size="1.778" layer="95" rot="R180"/>
+<junction x="-73.66" y="-29.21"/>
+</segment>
+<segment>
+<pinref part="U$1" gate="PORT_A" pin="PA11"/>
+<wire x1="-215.9" y1="31.75" x2="-210.82" y2="31.75" width="0.1524" layer="91"/>
+<label x="-210.82" y="31.75" size="1.778" layer="95"/>
 </segment>
 </net>
 </nets>
