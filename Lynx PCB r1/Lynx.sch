@@ -20373,7 +20373,7 @@ distributor RS 112-3794</description>
 <part name="C27" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="SUPPLY34" library="supply2" deviceset="GND" device=""/>
 <part name="+3V12" library="supply1" deviceset="+3V3" device=""/>
-<part name="X1" library="con-coax" deviceset="BU-SMA-V" device=""/>
+<part name="RF-MOD" library="con-coax" deviceset="BU-SMA-V" device=""/>
 <part name="SUPPLY35" library="supply2" deviceset="GND" device=""/>
 <part name="R8" library="rcl" deviceset="R-EU_" device="R0603" value="15"/>
 <part name="C29" library="rcl" deviceset="C-EU" device="C0603" value="0.01uF">
@@ -20457,10 +20457,10 @@ distributor RS 112-3794</description>
 <part name="5V-REG" library="Lynx components" deviceset="VOLTAGE-REGULATOR" device="" value="V-REG"/>
 <part name="C45" library="rcl" deviceset="C-EU" device="C0603" value="0.1uF"/>
 <part name="+3V18" library="supply1" deviceset="+3V3" device=""/>
-<part name="R13" library="resistor" deviceset="R-EU_" device="R0603" value="1500"/>
+<part name="R13" library="resistor" deviceset="R-EU_" device="R0603" value="1k5"/>
 <part name="SUPPLY57" library="supply2" deviceset="GND" device=""/>
 <part name="BOOT0" library="switch-tact" deviceset="DTSM-6" device=""/>
-<part name="X2" library="con-coax" deviceset="BU-SMA-V" device=""/>
+<part name="LO" library="con-coax" deviceset="BU-SMA-V" device=""/>
 <part name="SUPPLY54" library="supply2" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="JP10" library="pinhead" deviceset="PINHD-1X2" device="" value="Power In"/>
@@ -20604,7 +20604,7 @@ distributor RS 112-3794</description>
 <instance part="C27" gate="G$1" x="-34.29" y="-85.09" rot="MR0"/>
 <instance part="SUPPLY34" gate="GND" x="-29.21" y="-77.47" rot="R180"/>
 <instance part="+3V12" gate="G$1" x="-29.21" y="-95.25" rot="R180"/>
-<instance part="X1" gate="G$1" x="140.97" y="102.87" rot="R180"/>
+<instance part="RF-MOD" gate="G$1" x="140.97" y="102.87" rot="R180"/>
 <instance part="SUPPLY35" gate="GND" x="127" y="105.41" rot="R270"/>
 <instance part="SUPPLY38" gate="GND" x="-212.09" y="-124.46"/>
 <instance part="SUPPLY39" gate="GND" x="-227.33" y="-123.19"/>
@@ -20676,7 +20676,7 @@ distributor RS 112-3794</description>
 <instance part="R13" gate="G$1" x="-170.18" y="81.28" rot="R90"/>
 <instance part="SUPPLY57" gate="GND" x="-170.18" y="69.85"/>
 <instance part="BOOT0" gate="G$1" x="-157.48" y="83.82" rot="R90"/>
-<instance part="X2" gate="G$1" x="140.97" y="90.17" rot="R180"/>
+<instance part="LO" gate="G$1" x="140.97" y="90.17" rot="R180"/>
 <instance part="SUPPLY54" gate="GND" x="127" y="92.71" rot="R270"/>
 <instance part="U$3" gate="G$1" x="63.5" y="142.24"/>
 <instance part="SUPPLY1" gate="GND" x="40.64" y="96.52"/>
@@ -21296,7 +21296,7 @@ distributor RS 112-3794</description>
 <junction x="-29.21" y="-80.01"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="2"/>
+<pinref part="RF-MOD" gate="G$1" pin="2"/>
 <wire x1="138.43" y1="105.41" x2="129.54" y2="105.41" width="0.1524" layer="91"/>
 <pinref part="SUPPLY35" gate="GND" pin="GND"/>
 </segment>
@@ -21430,7 +21430,7 @@ distributor RS 112-3794</description>
 <wire x1="-170.18" y1="72.39" x2="-170.18" y2="76.2" width="0.1524" layer="91"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="2"/>
+<pinref part="LO" gate="G$1" pin="2"/>
 <wire x1="138.43" y1="92.71" x2="129.54" y2="92.71" width="0.1524" layer="91"/>
 <pinref part="SUPPLY54" gate="GND" pin="GND"/>
 </segment>
@@ -21634,7 +21634,7 @@ distributor RS 112-3794</description>
 <label x="198.12" y="43.18" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X1" gate="G$1" pin="1"/>
+<pinref part="RF-MOD" gate="G$1" pin="1"/>
 <wire x1="138.43" y1="102.87" x2="129.54" y2="102.87" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="102.87" x2="129.54" y2="101.6" width="0.1524" layer="91"/>
 <label x="127" y="99.06" size="1.778" layer="95"/>
@@ -22401,7 +22401,7 @@ distributor RS 112-3794</description>
 <label x="241.3" y="87.63" size="1.778" layer="95"/>
 </segment>
 <segment>
-<pinref part="X2" gate="G$1" pin="1"/>
+<pinref part="LO" gate="G$1" pin="1"/>
 <wire x1="138.43" y1="90.17" x2="129.54" y2="90.17" width="0.1524" layer="91"/>
 <wire x1="129.54" y1="90.17" x2="129.54" y2="88.9" width="0.1524" layer="91"/>
 <label x="127" y="86.36" size="1.778" layer="95"/>
@@ -22578,8 +22578,8 @@ distributor RS 112-3794</description>
 <approved hash="104,1,-130.81,-146.05,IC3,V+,+3V3,,,"/>
 <approved hash="104,1,85.09,-19.05,IC1,V+,+3V3,,,"/>
 <approved hash="104,1,85.09,-34.29,IC1,V-,GND,,,"/>
-<approved hash="115,1,-135.695,137.073,SPI1-DEBUG,,,,,"/>
-<approved hash="115,1,-153.475,137.073,SPI2-DEBUG,,,,,"/>
+<approved hash="115,1,-135.695,137.077,SPI1-DEBUG,,,,,"/>
+<approved hash="115,1,-153.475,137.077,SPI2-DEBUG,,,,,"/>
 <approved hash="115,1,-116.645,138.472,USART1,,,,,"/>
 <approved hash="115,1,-154.898,51.8753,DAC1-DB,,,,,"/>
 <approved hash="115,1,-143.468,31.5553,DAC2-DB,,,,,"/>
