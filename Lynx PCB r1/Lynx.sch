@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.1" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
+<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="no" altdistance="0.01" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="no" active="no"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="no"/>
@@ -19804,6 +19804,25 @@ NS Package M08A</description>
 <rectangle x1="-0.88" y1="2" x2="-0.39" y2="3.1" layer="51"/>
 <rectangle x1="-2.15" y1="2" x2="-1.66" y2="3.1" layer="51"/>
 </package>
+<package name="SOT23-5">
+<description>&lt;b&gt;Small Outline Transistor&lt;/b&gt;, 5 lead</description>
+<wire x1="-1.544" y1="0.713" x2="1.544" y2="0.713" width="0.1524" layer="51"/>
+<wire x1="1.544" y1="0.713" x2="1.544" y2="-0.712" width="0.1524" layer="21"/>
+<wire x1="1.544" y1="-0.712" x2="-1.544" y2="-0.712" width="0.1524" layer="51"/>
+<wire x1="-1.544" y1="-0.712" x2="-1.544" y2="0.713" width="0.1524" layer="21"/>
+<smd name="5" x="-0.95" y="1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="4" x="0.95" y="1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="1" x="-0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="2" x="0" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
+<smd name="3" x="0.95" y="-1.306" dx="0.6" dy="1.2" layer="1"/>
+<text x="-1.778" y="-1.778" size="1.27" layer="25" ratio="10" rot="R90">&gt;NAME</text>
+<text x="3.048" y="-1.778" size="1.27" layer="27" ratio="10" rot="R90">&gt;VALUE</text>
+<rectangle x1="-1.1875" y1="0.7126" x2="-0.7125" y2="1.5439" layer="51"/>
+<rectangle x1="0.7125" y1="0.7126" x2="1.1875" y2="1.5439" layer="51"/>
+<rectangle x1="-1.1875" y1="-1.5437" x2="-0.7125" y2="-0.7124" layer="51"/>
+<rectangle x1="-0.2375" y1="-1.5437" x2="0.2375" y2="-0.7124" layer="51"/>
+<rectangle x1="0.7125" y1="-1.5437" x2="1.1875" y2="-0.7124" layer="51"/>
+</package>
 </packages>
 <symbols>
 <symbol name="OPAMP">
@@ -19822,6 +19841,23 @@ NS Package M08A</description>
 <symbol name="PWR+-">
 <text x="1.27" y="3.175" size="0.8128" layer="93" rot="R90">V+</text>
 <text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">V-</text>
+<pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
+<pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
+</symbol>
+<symbol name="OPAMP+-">
+<wire x1="-5.08" y1="5.08" x2="-5.08" y2="-5.08" width="0.4064" layer="94"/>
+<wire x1="-5.08" y1="-5.08" x2="5.08" y2="0" width="0.4064" layer="94"/>
+<wire x1="5.08" y1="0" x2="-5.08" y2="5.08" width="0.4064" layer="94"/>
+<wire x1="-3.81" y1="3.175" x2="-3.81" y2="1.905" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="2.54" x2="-3.175" y2="2.54" width="0.1524" layer="94"/>
+<wire x1="-4.445" y1="-2.54" x2="-3.175" y2="-2.54" width="0.1524" layer="94"/>
+<text x="2.54" y="3.175" size="1.778" layer="95">&gt;NAME</text>
+<text x="2.54" y="-5.08" size="1.778" layer="96">&gt;VALUE</text>
+<text x="1.27" y="3.175" size="0.8128" layer="93" rot="R90">V+</text>
+<text x="1.27" y="-4.445" size="0.8128" layer="93" rot="R90">V-</text>
+<pin name="-IN" x="-7.62" y="-2.54" visible="pad" length="short" direction="in"/>
+<pin name="+IN" x="-7.62" y="2.54" visible="pad" length="short" direction="in"/>
+<pin name="OUT" x="7.62" y="0" visible="pad" length="short" direction="out" rot="R180"/>
 <pin name="V+" x="0" y="7.62" visible="pad" length="middle" direction="pwr" rot="R270"/>
 <pin name="V-" x="0" y="-7.62" visible="pad" length="middle" direction="pwr" rot="R90"/>
 </symbol>
@@ -19863,6 +19899,28 @@ NS Package M08A</description>
 </connects>
 <technologies>
 <technology name=""/>
+</technologies>
+</device>
+</devices>
+</deviceset>
+<deviceset name="LM321?*" prefix="IC">
+<description>&lt;b&gt;Low Power Single Op Amp&lt;/b&gt;&lt;p&gt;
+Source: http://cache.national.com/ds/LM/LM321.pdf</description>
+<gates>
+<gate name="G$1" symbol="OPAMP+-" x="0" y="0"/>
+</gates>
+<devices>
+<device name="MF" package="SOT23-5">
+<connects>
+<connect gate="G$1" pin="+IN" pad="1"/>
+<connect gate="G$1" pin="-IN" pad="3"/>
+<connect gate="G$1" pin="OUT" pad="4"/>
+<connect gate="G$1" pin="V+" pad="5"/>
+<connect gate="G$1" pin="V-" pad="2"/>
+</connects>
+<technologies>
+<technology name=""/>
+<technology name="X"/>
 </technologies>
 </device>
 </devices>
@@ -20406,6 +20464,12 @@ distributor RS 112-3794</description>
 <part name="SUPPLY54" library="supply2" deviceset="GND" device=""/>
 <part name="+3V1" library="supply1" deviceset="+3V3" device=""/>
 <part name="JP10" library="pinhead" deviceset="PINHD-1X2" device="" value="Power In"/>
+<part name="IC1" library="linear" deviceset="LM321?*" device="MF"/>
+<part name="R11" library="resistor" deviceset="R-EU_" device="R0603" value="50k"/>
+<part name="R12" library="resistor" deviceset="R-EU_" device="R0603" value="10k"/>
+<part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
+<part name="SUPPLY58" library="supply2" deviceset="GND" device=""/>
+<part name="SUPPLY59" library="supply2" deviceset="GND" device=""/>
 </parts>
 <sheets>
 <sheet>
@@ -20568,7 +20632,7 @@ distributor RS 112-3794</description>
 <instance part="C39" gate="G$1" x="31.75" y="-57.15"/>
 <instance part="C40" gate="G$1" x="48.26" y="-57.15"/>
 <instance part="SUPPLY46" gate="GND" x="31.75" y="-50.8" rot="MR180"/>
-<instance part="SUPPLY47" gate="GND" x="48.26" y="-50.8" rot="MR180"/>
+<instance part="SUPPLY47" gate="GND" x="48.26" y="-49.53" rot="MR180"/>
 <instance part="SUPPLY48" gate="GND" x="48.26" y="58.42" rot="R180"/>
 <instance part="SUPPLY49" gate="GND" x="48.26" y="-116.84"/>
 <instance part="+3V14" gate="G$1" x="60.96" y="-116.84" smashed="yes" rot="R180">
@@ -20663,6 +20727,14 @@ distributor RS 112-3794</description>
 <instance part="SUPPLY43" gate="GND" x="91.44" y="77.47"/>
 <instance part="+3V1" gate="G$1" x="2.54" y="134.62" rot="R90"/>
 <instance part="JP10" gate="G$1" x="-245.11" y="-154.94" rot="R180"/>
+<instance part="IC1" gate="G$1" x="85.09" y="-26.67"/>
+<instance part="R11" gate="G$1" x="63.5" y="-22.86" rot="R90"/>
+<instance part="R12" gate="G$1" x="63.5" y="-35.56" rot="R90"/>
+<instance part="+3V17" gate="G$1" x="63.5" y="-13.97" smashed="yes">
+<attribute name="VALUE" x="67.31" y="-11.43" size="1.778" layer="96" rot="R180"/>
+</instance>
+<instance part="SUPPLY58" gate="GND" x="63.5" y="-44.45" rot="MR0"/>
+<instance part="SUPPLY59" gate="GND" x="85.09" y="-44.45" rot="MR0"/>
 </instances>
 <busses>
 </busses>
@@ -21282,7 +21354,7 @@ distributor RS 112-3794</description>
 <segment>
 <pinref part="C40" gate="G$1" pin="1"/>
 <pinref part="SUPPLY47" gate="GND" pin="GND"/>
-<wire x1="48.26" y1="-54.61" x2="48.26" y2="-53.34" width="0.1524" layer="91"/>
+<wire x1="48.26" y1="-54.61" x2="48.26" y2="-52.07" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="U$4" gate="G$1" pin="INN"/>
@@ -21446,6 +21518,16 @@ distributor RS 112-3794</description>
 <pinref part="JP10" gate="G$1" pin="1"/>
 <wire x1="-242.57" y1="-157.48" x2="-232.41" y2="-157.48" width="0.1524" layer="91"/>
 <label x="-232.41" y="-157.48" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="SUPPLY58" gate="GND" pin="GND"/>
+<pinref part="R12" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="-41.91" x2="63.5" y2="-40.64" width="0.1524" layer="91"/>
+</segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="V-"/>
+<pinref part="SUPPLY59" gate="GND" pin="GND"/>
+<wire x1="85.09" y1="-41.91" x2="85.09" y2="-34.29" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="BBPI" class="0">
@@ -21699,6 +21781,9 @@ distributor RS 112-3794</description>
 <pinref part="IC2" gate="P" pin="V+"/>
 <wire x1="1.27" y1="-22.86" x2="1.27" y2="-20.32" width="0.1524" layer="91"/>
 <label x="-1.27" y="-20.32" size="1.778" layer="95"/>
+<wire x1="85.09" y1="-19.05" x2="85.09" y2="-15.24" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="V+"/>
+<label x="82.55" y="-15.24" size="1.778" layer="95"/>
 </segment>
 <segment>
 <pinref part="JP1" gate="G$1" pin="2"/>
@@ -21777,6 +21862,11 @@ distributor RS 112-3794</description>
 <pinref part="U$3" gate="G$1" pin="!MUTE!"/>
 <wire x1="25.4" y1="134.62" x2="5.08" y2="134.62" width="0.1524" layer="91"/>
 <pinref part="+3V1" gate="G$1" pin="+3V3"/>
+</segment>
+<segment>
+<pinref part="R11" gate="G$1" pin="2"/>
+<pinref part="+3V17" gate="G$1" pin="+3V3"/>
+<wire x1="63.5" y1="-16.51" x2="63.5" y2="-17.78" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -22150,6 +22240,18 @@ distributor RS 112-3794</description>
 <label x="34.29" y="-88.9" size="1.778" layer="95" rot="R180"/>
 <pinref part="U$5" gate="G$1" pin="VOCM"/>
 </segment>
+<segment>
+<pinref part="IC1" gate="G$1" pin="+IN"/>
+<wire x1="77.47" y1="-24.13" x2="72.39" y2="-24.13" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="-24.13" x2="72.39" y2="-8.89" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="-8.89" x2="95.25" y2="-8.89" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="-8.89" x2="95.25" y2="-26.67" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="OUT"/>
+<wire x1="95.25" y1="-26.67" x2="92.71" y2="-26.67" width="0.1524" layer="91"/>
+<wire x1="95.25" y1="-26.67" x2="100.33" y2="-26.67" width="0.1524" layer="91"/>
+<junction x="95.25" y="-26.67"/>
+<label x="100.33" y="-26.67" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="-3V3" class="0">
 <segment>
@@ -22438,10 +22540,27 @@ distributor RS 112-3794</description>
 <wire x1="57.15" y1="93.98" x2="57.15" y2="88.9" width="0.1524" layer="91"/>
 </segment>
 </net>
+<net name="N$42" class="0">
+<segment>
+<pinref part="IC1" gate="G$1" pin="-IN"/>
+<wire x1="77.47" y1="-29.21" x2="63.5" y2="-29.21" width="0.1524" layer="91"/>
+<pinref part="R11" gate="G$1" pin="1"/>
+<wire x1="63.5" y1="-29.21" x2="63.5" y2="-27.94" width="0.1524" layer="91"/>
+<pinref part="R12" gate="G$1" pin="2"/>
+<wire x1="63.5" y1="-30.48" x2="63.5" y2="-29.21" width="0.1524" layer="91"/>
+<junction x="63.5" y="-29.21"/>
+</segment>
+</net>
 </nets>
 </sheet>
 </sheets>
 <errors>
+<approved hash="104,1,2.54,90.17,10MHZ,VCC,+3V3,,,"/>
+<approved hash="104,1,1.27,-22.86,IC2P,V+,+3V3,,,"/>
+<approved hash="104,1,1.27,-38.1,IC2P,V-,-3V3,,,"/>
+<approved hash="104,1,-130.81,-146.05,IC3,V+,+3V3,,,"/>
+<approved hash="104,1,85.09,-19.05,IC1,V+,+3V3,,,"/>
+<approved hash="104,1,85.09,-34.29,IC1,V-,GND,,,"/>
 <approved hash="115,1,-135.695,137.073,SPI1-DEBUG,,,,,"/>
 <approved hash="115,1,-153.475,137.073,SPI2-DEBUG,,,,,"/>
 <approved hash="115,1,-116.645,138.472,USART1,,,,,"/>
