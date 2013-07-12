@@ -20470,12 +20470,13 @@ distributor RS 112-3794</description>
 <part name="+3V17" library="supply1" deviceset="+3V3" device=""/>
 <part name="SUPPLY58" library="supply2" deviceset="GND" device=""/>
 <part name="SUPPLY59" library="supply2" deviceset="GND" device=""/>
+<part name="JP11" library="pinhead" deviceset="PINHD-1X2" device="" value="Power In"/>
 </parts>
 <sheets>
 <sheet>
 <plain>
 <text x="-214.63" y="-160.02" size="1.778" layer="91">Alternate power supply in</text>
-<text x="-250.19" y="-166.37" size="1.778" layer="91">supply socket</text>
+<text x="-262.89" y="-143.51" size="1.778" layer="91">supply socket</text>
 <text x="20.32" y="156.21" size="1.778" layer="91">SPI2</text>
 </plain>
 <instances>
@@ -20735,6 +20736,7 @@ distributor RS 112-3794</description>
 </instance>
 <instance part="SUPPLY58" gate="GND" x="63.5" y="-44.45" rot="MR0"/>
 <instance part="SUPPLY59" gate="GND" x="85.09" y="-44.45" rot="MR0"/>
+<instance part="JP11" gate="G$1" x="-243.84" y="-168.91" rot="R180"/>
 </instances>
 <busses>
 </busses>
@@ -21529,6 +21531,11 @@ distributor RS 112-3794</description>
 <pinref part="SUPPLY59" gate="GND" pin="GND"/>
 <wire x1="85.09" y1="-41.91" x2="85.09" y2="-34.29" width="0.1524" layer="91"/>
 </segment>
+<segment>
+<pinref part="JP11" gate="G$1" pin="1"/>
+<wire x1="-241.3" y1="-171.45" x2="-231.14" y2="-171.45" width="0.1524" layer="91"/>
+<label x="-231.14" y="-171.45" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="BBPI" class="0">
 <segment>
@@ -22184,6 +22191,11 @@ distributor RS 112-3794</description>
 <wire x1="-242.57" y1="-154.94" x2="-232.41" y2="-154.94" width="0.1524" layer="91"/>
 <label x="-232.41" y="-154.94" size="1.778" layer="95"/>
 </segment>
+<segment>
+<pinref part="JP11" gate="G$1" pin="2"/>
+<wire x1="-241.3" y1="-168.91" x2="-231.14" y2="-168.91" width="0.1524" layer="91"/>
+<label x="-231.14" y="-168.91" size="1.778" layer="95"/>
+</segment>
 </net>
 <net name="N$31" class="0">
 <segment>
@@ -22489,13 +22501,6 @@ distributor RS 112-3794</description>
 <wire x1="107.95" y1="127" x2="114.3" y2="127" width="0.1524" layer="91"/>
 </segment>
 </net>
-<net name="PLL_STAT" class="0">
-<segment>
-<pinref part="U$3" gate="G$1" pin="STAT"/>
-<wire x1="25.4" y1="139.7" x2="20.32" y2="139.7" width="0.1524" layer="91"/>
-<label x="20.32" y="140.97" size="1.778" layer="95" rot="R180"/>
-</segment>
-</net>
 <net name="N$3" class="0">
 <segment>
 <pinref part="C7" gate="G$1" pin="2"/>
@@ -22549,6 +22554,18 @@ distributor RS 112-3794</description>
 <pinref part="R12" gate="G$1" pin="2"/>
 <wire x1="63.5" y1="-30.48" x2="63.5" y2="-29.21" width="0.1524" layer="91"/>
 <junction x="63.5" y="-29.21"/>
+</segment>
+</net>
+<net name="PLL-STAT" class="0">
+<segment>
+<pinref part="U$1" gate="PORT_A" pin="PA2"/>
+<wire x1="-215.9" y1="54.61" x2="-210.82" y2="54.61" width="0.1524" layer="91"/>
+<label x="-210.82" y="54.61" size="1.778" layer="95"/>
+</segment>
+<segment>
+<pinref part="U$3" gate="G$1" pin="STAT"/>
+<wire x1="25.4" y1="139.7" x2="20.32" y2="139.7" width="0.1524" layer="91"/>
+<label x="20.32" y="140.97" size="1.778" layer="95" rot="R180"/>
 </segment>
 </net>
 </nets>
