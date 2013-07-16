@@ -5,9 +5,8 @@ Bottom Silk		- 	GBO
 Top Soldermask 		- 	GTS
 Bottom Soldermask 	- 	GBS
 Drill file 		- 	TXT
+Board Outline		-	GKO
 
 Gerber format 		- 	RS274X
 Drill format 		- 	Excellon
 				2:4 Leading
-
-PCB boarder is on the top-copper layer.
