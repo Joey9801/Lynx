@@ -1,9 +1,0 @@
-Top Copper - GTL
-Bottom Copper - GBL
-Top Silk - GTO
-Top Soldermask - GTS
-Bottom Soldermask - GBS
-Drill file - TXT
-
-Gerber format - RS274X
-Drill format - Excellon

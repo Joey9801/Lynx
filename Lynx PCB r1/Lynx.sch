@@ -331,37 +331,66 @@ Parts for the experimental Lynx radio system.&lt;p&gt;
 <rectangle x1="6.096" y1="-0.254" x2="6.604" y2="0.254" layer="51"/>
 </package>
 <package name="QFN-28">
-<smd name="25" x="-2.48" y="0.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="24" x="-2.48" y="0.75" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="23" x="-2.48" y="1.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="26" x="-2.48" y="-0.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="27" x="-2.48" y="-0.75" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="28" x="-2.48" y="-1.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="12" x="2.32" y="0.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="13" x="2.32" y="0.75" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="14" x="2.32" y="1.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="11" x="2.32" y="-0.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="10" x="2.32" y="-0.75" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="9" x="2.32" y="-1.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="19" x="-0.33" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="20" x="-0.83" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="21" x="-1.33" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="18" x="0.17" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="17" x="0.67" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="16" x="1.17" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="22" x="-1.83" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="15" x="1.67" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="5" x="0.17" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="6" x="0.67" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="7" x="1.17" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="4" x="-0.33" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="3" x="-0.83" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="2" x="-1.33" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="8" x="1.67" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="1" x="-1.83" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="EXPOSED-PAD" x="-0.07" y="0" dx="3.65" dy="2.65" layer="1" rot="R180"/>
+<smd name="25" x="-2.48" y="0.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="24" x="-2.48" y="0.75" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="23" x="-2.48" y="1.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="26" x="-2.48" y="-0.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="27" x="-2.48" y="-0.75" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="28" x="-2.48" y="-1.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="12" x="2.32" y="0.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="13" x="2.32" y="0.75" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="14" x="2.32" y="1.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="11" x="2.32" y="-0.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="10" x="2.32" y="-0.75" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="9" x="2.32" y="-1.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="19" x="-0.33" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="20" x="-0.83" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="21" x="-1.33" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="18" x="0.17" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="17" x="0.67" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="16" x="1.17" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="22" x="-1.83" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="15" x="1.67" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="5" x="0.17" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="6" x="0.67" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="7" x="1.17" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="4" x="-0.33" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="3" x="-0.83" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="2" x="-1.33" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="8" x="1.67" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="1" x="-1.83" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="EXPOSED-PAD" x="-0.07" y="0" dx="3.65" dy="2.65" layer="1" rot="R180" stop="no"/>
 <text x="-3" y="3.05" size="1.27" layer="21">&gt;NAME</text>
 <circle x="-2.7" y="-2.05" radius="0.180275" width="0.4064" layer="21"/>
+<rectangle x1="-1.5" y1="1.5" x2="-1.15" y2="2.3" layer="29"/>
+<rectangle x1="-2" y1="1.5" x2="-1.65" y2="2.3" layer="29"/>
+<rectangle x1="-1" y1="1.5" x2="-0.65" y2="2.3" layer="29"/>
+<rectangle x1="-0.5" y1="1.5" x2="-0.15" y2="2.3" layer="29"/>
+<rectangle x1="0" y1="1.5" x2="0.35" y2="2.3" layer="29"/>
+<rectangle x1="0.5" y1="1.5" x2="0.85" y2="2.3" layer="29"/>
+<rectangle x1="1" y1="1.5" x2="1.35" y2="2.3" layer="29"/>
+<rectangle x1="1.5" y1="1.5" x2="1.85" y2="2.3" layer="29"/>
+<rectangle x1="-1.5" y1="-2.3" x2="-1.15" y2="-1.5" layer="29"/>
+<rectangle x1="-2" y1="-2.3" x2="-1.65" y2="-1.5" layer="29"/>
+<rectangle x1="-1" y1="-2.3" x2="-0.65" y2="-1.5" layer="29"/>
+<rectangle x1="-0.5" y1="-2.3" x2="-0.15" y2="-1.5" layer="29"/>
+<rectangle x1="0" y1="-2.3" x2="0.35" y2="-1.5" layer="29"/>
+<rectangle x1="0.5" y1="-2.3" x2="0.85" y2="-1.5" layer="29"/>
+<rectangle x1="1" y1="-2.3" x2="1.35" y2="-1.5" layer="29"/>
+<rectangle x1="1.5" y1="-2.3" x2="1.85" y2="-1.5" layer="29"/>
+<rectangle x1="-2.875" y1="1.075" x2="-2.075" y2="1.425" layer="29"/>
+<rectangle x1="-2.875" y1="0.575" x2="-2.075" y2="0.925" layer="29"/>
+<rectangle x1="-2.875" y1="0.075" x2="-2.075" y2="0.425" layer="29"/>
+<rectangle x1="-2.875" y1="-0.425" x2="-2.075" y2="-0.075" layer="29"/>
+<rectangle x1="-2.875" y1="-0.925" x2="-2.075" y2="-0.575" layer="29"/>
+<rectangle x1="1.925" y1="1.075" x2="2.725" y2="1.425" layer="29"/>
+<rectangle x1="1.925" y1="0.575" x2="2.725" y2="0.925" layer="29"/>
+<rectangle x1="1.925" y1="0.075" x2="2.725" y2="0.425" layer="29"/>
+<rectangle x1="1.925" y1="-0.425" x2="2.725" y2="-0.075" layer="29"/>
+<rectangle x1="1.925" y1="-0.925" x2="2.725" y2="-0.575" layer="29"/>
+<rectangle x1="1.925" y1="-1.425" x2="2.725" y2="-1.075" layer="29"/>
+<rectangle x1="-2.875" y1="-1.425" x2="-2.075" y2="-1.075" layer="29"/>
+<rectangle x1="-1.975" y1="-1.4" x2="1.825" y2="1.4" layer="29"/>
 </package>
 <package name="QFN-16">
 <wire x1="-1.95" y1="1.925" x2="1.95" y2="1.925" width="0.1016" layer="21"/>
@@ -21124,13 +21153,13 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <instance part="+3V1" gate="G$1" x="2.54" y="134.62" rot="R90"/>
 <instance part="JP10" gate="G$1" x="-245.11" y="-154.94" rot="R180"/>
 <instance part="IC1" gate="G$1" x="85.09" y="-26.67"/>
-<instance part="R11" gate="G$1" x="63.5" y="-22.86" rot="R90"/>
-<instance part="R12" gate="G$1" x="63.5" y="-35.56" rot="R90"/>
-<instance part="+3V17" gate="G$1" x="63.5" y="-13.97" smashed="yes">
-<attribute name="VALUE" x="67.31" y="-11.43" size="1.778" layer="96" rot="R180"/>
+<instance part="R11" gate="G$1" x="62.23" y="-17.78" rot="R90"/>
+<instance part="R12" gate="G$1" x="62.23" y="-30.48" rot="R90"/>
+<instance part="+3V17" gate="G$1" x="62.23" y="-8.89" smashed="yes">
+<attribute name="VALUE" x="66.04" y="-6.35" size="1.778" layer="96" rot="R180"/>
 </instance>
-<instance part="SUPPLY58" gate="GND" x="63.5" y="-44.45" rot="MR0"/>
-<instance part="SUPPLY59" gate="GND" x="85.09" y="-44.45" rot="MR0"/>
+<instance part="SUPPLY58" gate="GND" x="62.23" y="-39.37" rot="MR0"/>
+<instance part="SUPPLY59" gate="GND" x="85.09" y="-40.64" rot="MR0"/>
 <instance part="JP11" gate="G$1" x="-243.84" y="-168.91" rot="R180"/>
 <instance part="DAC-CLK" gate="G$1" x="-198.12" y="29.21" smashed="yes" rot="R90">
 <attribute name="TP_SIGNAL_NAME" x="-195.58" y="30.48" size="1.778" layer="97" rot="R90"/>
@@ -21915,12 +21944,12 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <segment>
 <pinref part="SUPPLY58" gate="GND" pin="GND"/>
 <pinref part="R12" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="-41.91" x2="63.5" y2="-40.64" width="0.1524" layer="91"/>
+<wire x1="62.23" y1="-36.83" x2="62.23" y2="-35.56" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="IC1" gate="G$1" pin="V-"/>
 <pinref part="SUPPLY59" gate="GND" pin="GND"/>
-<wire x1="85.09" y1="-41.91" x2="85.09" y2="-34.29" width="0.1524" layer="91"/>
+<wire x1="85.09" y1="-38.1" x2="85.09" y2="-34.29" width="0.1524" layer="91"/>
 </segment>
 <segment>
 <pinref part="JP11" gate="G$1" pin="1"/>
@@ -22275,7 +22304,7 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <segment>
 <pinref part="R11" gate="G$1" pin="2"/>
 <pinref part="+3V17" gate="G$1" pin="+3V3"/>
-<wire x1="63.5" y1="-16.51" x2="63.5" y2="-17.78" width="0.1524" layer="91"/>
+<wire x1="62.23" y1="-11.43" x2="62.23" y2="-12.7" width="0.1524" layer="91"/>
 </segment>
 </net>
 <net name="+5V" class="0">
@@ -22655,16 +22684,16 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 <pinref part="U$5" gate="G$1" pin="VOCM"/>
 </segment>
 <segment>
-<pinref part="IC1" gate="G$1" pin="+IN"/>
-<wire x1="77.47" y1="-24.13" x2="72.39" y2="-24.13" width="0.1524" layer="91"/>
-<wire x1="72.39" y1="-24.13" x2="72.39" y2="-8.89" width="0.1524" layer="91"/>
-<wire x1="72.39" y1="-8.89" x2="95.25" y2="-8.89" width="0.1524" layer="91"/>
-<wire x1="95.25" y1="-8.89" x2="95.25" y2="-26.67" width="0.1524" layer="91"/>
 <pinref part="IC1" gate="G$1" pin="OUT"/>
-<wire x1="95.25" y1="-26.67" x2="92.71" y2="-26.67" width="0.1524" layer="91"/>
-<wire x1="95.25" y1="-26.67" x2="100.33" y2="-26.67" width="0.1524" layer="91"/>
-<junction x="95.25" y="-26.67"/>
+<wire x1="92.71" y1="-26.67" x2="96.52" y2="-26.67" width="0.1524" layer="91"/>
 <label x="100.33" y="-26.67" size="1.778" layer="95"/>
+<pinref part="IC1" gate="G$1" pin="-IN"/>
+<wire x1="96.52" y1="-26.67" x2="100.33" y2="-26.67" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="-29.21" x2="72.39" y2="-29.21" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="-29.21" x2="72.39" y2="-46.99" width="0.1524" layer="91"/>
+<wire x1="72.39" y1="-46.99" x2="96.52" y2="-46.99" width="0.1524" layer="91"/>
+<wire x1="96.52" y1="-46.99" x2="96.52" y2="-26.67" width="0.1524" layer="91"/>
+<junction x="96.52" y="-26.67"/>
 </segment>
 </net>
 <net name="-3V3" class="0">
@@ -22952,13 +22981,13 @@ Source: www.johnsoncomponents.com .. J502-ND.pdf</description>
 </net>
 <net name="N$42" class="0">
 <segment>
-<pinref part="IC1" gate="G$1" pin="-IN"/>
-<wire x1="77.47" y1="-29.21" x2="63.5" y2="-29.21" width="0.1524" layer="91"/>
 <pinref part="R11" gate="G$1" pin="1"/>
-<wire x1="63.5" y1="-29.21" x2="63.5" y2="-27.94" width="0.1524" layer="91"/>
 <pinref part="R12" gate="G$1" pin="2"/>
-<wire x1="63.5" y1="-30.48" x2="63.5" y2="-29.21" width="0.1524" layer="91"/>
-<junction x="63.5" y="-29.21"/>
+<wire x1="62.23" y1="-25.4" x2="62.23" y2="-24.13" width="0.1524" layer="91"/>
+<pinref part="IC1" gate="G$1" pin="+IN"/>
+<wire x1="62.23" y1="-24.13" x2="62.23" y2="-22.86" width="0.1524" layer="91"/>
+<wire x1="77.47" y1="-24.13" x2="62.23" y2="-24.13" width="0.1524" layer="91"/>
+<junction x="62.23" y="-24.13"/>
 </segment>
 </net>
 <net name="PLL-STAT" class="0">

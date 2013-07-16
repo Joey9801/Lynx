@@ -6,7 +6,7 @@
 <setting alwaysvectorfont="no"/>
 <setting verticaltext="up"/>
 </settings>
-<grid distance="0.05" unitdist="inch" unit="inch" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
+<grid distance="0.025" unitdist="mm" unit="mm" style="lines" multiple="1" display="yes" altdistance="0.025" altunitdist="inch" altunit="inch"/>
 <layers>
 <layer number="1" name="Top" color="4" fill="1" visible="yes" active="yes"/>
 <layer number="2" name="Route2" color="1" fill="3" visible="no" active="yes"/>
@@ -36,7 +36,7 @@
 <layer number="26" name="bNames" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="27" name="tValues" color="7" fill="1" visible="yes" active="yes"/>
 <layer number="28" name="bValues" color="7" fill="1" visible="yes" active="yes"/>
-<layer number="29" name="tStop" color="7" fill="3" visible="no" active="yes"/>
+<layer number="29" name="tStop" color="7" fill="3" visible="yes" active="yes"/>
 <layer number="30" name="bStop" color="7" fill="6" visible="no" active="yes"/>
 <layer number="31" name="tCream" color="7" fill="4" visible="no" active="yes"/>
 <layer number="32" name="bCream" color="7" fill="5" visible="no" active="yes"/>
@@ -364,37 +364,66 @@ Parts for the experimental Lynx radio system.&lt;p&gt;
 <rectangle x1="4.191" y1="1.9558" x2="4.699" y2="3.0988" layer="51"/>
 </package>
 <package name="QFN-28">
-<smd name="25" x="-2.48" y="0.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="24" x="-2.48" y="0.75" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="23" x="-2.48" y="1.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="26" x="-2.48" y="-0.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="27" x="-2.48" y="-0.75" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="28" x="-2.48" y="-1.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="12" x="2.32" y="0.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="13" x="2.32" y="0.75" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="14" x="2.32" y="1.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="11" x="2.32" y="-0.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="10" x="2.32" y="-0.75" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="9" x="2.32" y="-1.25" dx="0.7" dy="0.25" layer="1" rot="R180"/>
-<smd name="19" x="-0.33" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="20" x="-0.83" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="21" x="-1.33" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="18" x="0.17" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="17" x="0.67" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="16" x="1.17" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="22" x="-1.83" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="15" x="1.67" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270"/>
-<smd name="5" x="0.17" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="6" x="0.67" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="7" x="1.17" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="4" x="-0.33" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="3" x="-0.83" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="2" x="-1.33" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="8" x="1.67" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="1" x="-1.83" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90"/>
-<smd name="EXPOSED-PAD" x="-0.07" y="0" dx="3.65" dy="2.65" layer="1" rot="R180"/>
+<smd name="25" x="-2.48" y="0.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="24" x="-2.48" y="0.75" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="23" x="-2.48" y="1.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="26" x="-2.48" y="-0.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="27" x="-2.48" y="-0.75" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="28" x="-2.48" y="-1.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="12" x="2.32" y="0.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="13" x="2.32" y="0.75" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="14" x="2.32" y="1.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="11" x="2.32" y="-0.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="10" x="2.32" y="-0.75" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="9" x="2.32" y="-1.25" dx="0.7" dy="0.25" layer="1" rot="R180" stop="no"/>
+<smd name="19" x="-0.33" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="20" x="-0.83" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="21" x="-1.33" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="18" x="0.17" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="17" x="0.67" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="16" x="1.17" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="22" x="-1.83" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="15" x="1.67" y="1.9" dx="0.7" dy="0.25" layer="1" rot="R270" stop="no"/>
+<smd name="5" x="0.17" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="6" x="0.67" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="7" x="1.17" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="4" x="-0.33" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="3" x="-0.83" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="2" x="-1.33" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="8" x="1.67" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="1" x="-1.83" y="-1.9" dx="0.7" dy="0.25" layer="1" rot="R90" stop="no"/>
+<smd name="EXPOSED-PAD" x="-0.07" y="0" dx="3.65" dy="2.65" layer="1" rot="R180" stop="no"/>
 <text x="-3" y="3.05" size="1.27" layer="21">&gt;NAME</text>
 <circle x="-2.7" y="-2.05" radius="0.180275" width="0.4064" layer="21"/>
+<rectangle x1="-1.5" y1="1.5" x2="-1.15" y2="2.3" layer="29"/>
+<rectangle x1="-2" y1="1.5" x2="-1.65" y2="2.3" layer="29"/>
+<rectangle x1="-1" y1="1.5" x2="-0.65" y2="2.3" layer="29"/>
+<rectangle x1="-0.5" y1="1.5" x2="-0.15" y2="2.3" layer="29"/>
+<rectangle x1="0" y1="1.5" x2="0.35" y2="2.3" layer="29"/>
+<rectangle x1="0.5" y1="1.5" x2="0.85" y2="2.3" layer="29"/>
+<rectangle x1="1" y1="1.5" x2="1.35" y2="2.3" layer="29"/>
+<rectangle x1="1.5" y1="1.5" x2="1.85" y2="2.3" layer="29"/>
+<rectangle x1="-1.5" y1="-2.3" x2="-1.15" y2="-1.5" layer="29"/>
+<rectangle x1="-2" y1="-2.3" x2="-1.65" y2="-1.5" layer="29"/>
+<rectangle x1="-1" y1="-2.3" x2="-0.65" y2="-1.5" layer="29"/>
+<rectangle x1="-0.5" y1="-2.3" x2="-0.15" y2="-1.5" layer="29"/>
+<rectangle x1="0" y1="-2.3" x2="0.35" y2="-1.5" layer="29"/>
+<rectangle x1="0.5" y1="-2.3" x2="0.85" y2="-1.5" layer="29"/>
+<rectangle x1="1" y1="-2.3" x2="1.35" y2="-1.5" layer="29"/>
+<rectangle x1="1.5" y1="-2.3" x2="1.85" y2="-1.5" layer="29"/>
+<rectangle x1="-2.875" y1="1.075" x2="-2.075" y2="1.425" layer="29"/>
+<rectangle x1="-2.875" y1="0.575" x2="-2.075" y2="0.925" layer="29"/>
+<rectangle x1="-2.875" y1="0.075" x2="-2.075" y2="0.425" layer="29"/>
+<rectangle x1="-2.875" y1="-0.425" x2="-2.075" y2="-0.075" layer="29"/>
+<rectangle x1="-2.875" y1="-0.925" x2="-2.075" y2="-0.575" layer="29"/>
+<rectangle x1="1.925" y1="1.075" x2="2.725" y2="1.425" layer="29"/>
+<rectangle x1="1.925" y1="0.575" x2="2.725" y2="0.925" layer="29"/>
+<rectangle x1="1.925" y1="0.075" x2="2.725" y2="0.425" layer="29"/>
+<rectangle x1="1.925" y1="-0.425" x2="2.725" y2="-0.075" layer="29"/>
+<rectangle x1="1.925" y1="-0.925" x2="2.725" y2="-0.575" layer="29"/>
+<rectangle x1="1.925" y1="-1.425" x2="2.725" y2="-1.075" layer="29"/>
+<rectangle x1="-2.875" y1="-1.425" x2="-2.075" y2="-1.075" layer="29"/>
+<rectangle x1="-1.975" y1="-1.4" x2="1.825" y2="1.4" layer="29"/>
 </package>
 <package name="QFN-16">
 <wire x1="-1.95" y1="1.925" x2="1.95" y2="1.925" width="0.1016" layer="21"/>
