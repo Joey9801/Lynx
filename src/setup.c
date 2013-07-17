@@ -1,5 +1,9 @@
 #include "setup.h"
 
+/* this file sets up all the on-chip peripherals for 
+use elsewhere. It does not talk to anything else. The 
+timers and interrupts are setup in schedule.c */
+
 void clock_setup(void){
 	/*Operate at 168MHz*/
 	rcc_clock_setup_hse_3v3(&hse_8mhz_3v3[CLOCK_3V3_48MHZ]);

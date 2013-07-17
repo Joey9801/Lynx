@@ -1,9 +1,4 @@
 #include "lynx.h"
-#include "debug.c"
-#include "ecc.c" 
-#include "setup.c"
-#include "pll.c"
-
 
 int main (void){
 
@@ -11,9 +6,9 @@ int main (void){
 	usart_setup();
 
 	debug_send("*************************************\n");
-	debug_send("*         Lynx starting up\n        *");
-	debug_send("*           Joe Roberts\n           *");
-	debug_send("*        UROP - Summer 2013\n       *");
+	debug_send("*         Lynx starting up          *\n");
+	debug_send("*           Joe Roberts             *\n");
+	debug_send("*        UROP - Summer 2013         *\n");
 	debug_send("*************************************\n\n\n");
 
 	debug_send("ledpins_setup()");
@@ -67,7 +62,7 @@ int main (void){
 	}
 	
 	debug_send("We somehow escaped the for ever loop\n");
-	debug_send("..This is a little sad, there's not much you can do to fix this\n\n");
+	debug_send("..This is a little sad, there's not much you can do to fix this\n\n\n\n");
 	debug_send("goodbye, cruel world");
 	while(1);
  return 1;

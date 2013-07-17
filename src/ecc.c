@@ -19,9 +19,9 @@ void do_parity(void){
 	}
 
 	//set the status register and buffer pointers appropriately
-	coding_buffer++;
-	if(coding_buffer==BUFFERS) //advance the buffer pointer
-		coding_buffer = 0;
-	if(coding_buffer==input_buffer) //still waiting for a new dataset
+	ecc_buffer++;
+	if(ecc_buffer==BUFFERS) //advance the buffer pointer
+		ecc_buffer = 0;
+	if(ecc_buffer==input_buffer) //still waiting for a new dataset
 		status &= !(1<<1);
 }

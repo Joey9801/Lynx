@@ -2,6 +2,12 @@
 
 #define PACKETLENGTH 50	//Number of bytes in each transmit
 #define BUFFERS 2	//Number of buffer sets
+#define MAXPOINTS 64 	//the maximum number of points allowed in the constellation
+
+#include "debug.c"
+#include "ecc.c" 
+#include "setup.c"
+#include "pll.c"
 
 //raw packets, 1 buffer and 1 active
 volatile char packet_raw[BUFFERS][PACKETLENGTH];
@@ -14,7 +20,8 @@ volatile short packet_constellation[BUFFERS][PACKETLENGTH*8][2];
 
 
 volatile unsigned char input_buffer = 0;
-volatile unsigned char coding_buffer = 0;
+volatile unsigned char ecc_buffer = 0;
+volatile unsigned char constellation_buffer = 0;
 volatile unsigned char transmit_buffer = 0;
 
 char status = 0;
@@ -28,8 +35,6 @@ bit  |	Task
 3-7 	unused
 
 pulse shaping is carried out on a per symbol basis inside the interrupt
-
-
 
 priority is built into the todo, carry out the task on the least
 significant set bit first
