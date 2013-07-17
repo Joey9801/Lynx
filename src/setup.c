@@ -6,14 +6,9 @@ void clock_setup(void){
 }
 
 void usart_setup(void){
-	//setup the usart
-	//the debug header is on USART1
+	//the USART header is attached to usart2
 
-
-	//below pasted from working playground
-	
-	//usart clock
-	rcc_peripheral_enable_clock(&RCC_APB1ENR, RCC_APB1ENR_USART1EN);
+	rcc_peripheral_enable_clock(&RCC_APB2ENR, RCC_APB2ENR_USART1EN);
 	//usart pins
 	gpio_mode_setup(GPIOA, GPIO_MODE_AF, GPIO_PUPD_NONE,
 						GPIO9|
@@ -34,26 +29,29 @@ void usart_setup(void){
 }
 
 
-void led_setup(void){
+void ledpins_setup(void){
 	//leds are all on port b
 	rcc_peripheral_enable_clock(&RCC_AHB1ENR, RCC_AHB1ENR_IOPBEN);
-	//Set all as push/pull outputs
 	gpio_mode_setup(LED_PORT, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, 
 						STAT1_GR| 
 						STAT1_RE| 
 						STAT2_GR| 
 						STAT2_RE);
-
 }
 
 
 //spi1 -> data input
 //spi2 -> pll control
-void spi_setup(void){
 
+void spi1_setup(void){
+	//setup as slave with an interrupt for incoming data
+}
+
+void spi2_setup(void){
+
+	//setup the clocks for gpio pins and spi2
 	//setup the chip select
-	//may be able to use hardware instead of the hacky
-
+	//may be able to use hardware instead of the hacky software
 
 	gpio_mode_setup(GPIOB, GPIO_MODE_AF, GPIO_PUPD_NONE, 
 						GPIO13|
@@ -71,12 +69,28 @@ void spi_setup(void){
 			/* Most or Least Sig Bit First */
 			SPI_CR1_MSBFIRST);
 
-	spi_enable_software_slave_management(SPI1);
-	spi_set_nss_high(SPI1);
+	spi_enable_software_slave_management(SPI2);
+	spi_set_nss_high(SPI2);
 
 
 	//enable SPI1
 	spi_enable(SPI1);
+}
+
+void dac_setup(void){
+	//initialise the db gpios
+	//initialise the dac-clk gpio
+}
+
+void timer_setup(void){
+	//4 timers:
+	//dac-db update + calculate next fir sample
+	//dac-clk pulse, linked with above
+	//input timeout - fill the remainder of the packet with 0's
+}
+
+void nvic_setup(void){
+	//setup all the interrupts for the timers + spi input
 }
 
 

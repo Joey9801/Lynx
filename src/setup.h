@@ -4,8 +4,19 @@
 #define STAT2_GR GPIO2
 #define STAT2_RE GPIO10
 
+#include <libopencm3/stm32/f4/rcc.h>
+#include <libopencm3/stm32/f4/gpio.h>
+#include <libopencm3/stm32/f4/spi.h>
+#include <libopencm3/stm32/usart.h>
+#include <libopencm3/stm32/f4/timer.h>
+#include <libopencm3/cm3/nvic.h>
 
-void clock_setup(void)
-void usart_setup(void)
-void led_setup(void)
-void spi_setup(void)
+
+void clock_setup(void);
+void usart_setup(void);
+void ledpins_setup(void);
+void spi1_setup(void);
+void spi2_setup(void);
+void nvic_setup(void);
+void dac_setup(void);
+void timer_setup(void);

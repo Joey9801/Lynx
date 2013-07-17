@@ -1,7 +1,7 @@
 #include "ecc.h"
 
 //sets the 9th bit of each word as parity
-void set_parity(void){
+void do_parity(void){
 	coded_words=PACKETLENGTH;	//no extra words added
 	coded_bits = 9;			//1 extra bit per word added
 	int i;
@@ -10,11 +10,18 @@ void set_parity(void){
 	for(i=0; i<PACKETLENGTH; i++){
 		n = 0;
 		for(ii=0; ii<7; ii++){
-			if( (packet_raw[0][i]&(1<<ii)) == (1<<ii) )
+			if( (packet_raw[coding_buffer][i]&(1<<ii)) == (1<<ii) )
 				n++; //count set bits in message
 		}
-		packet_coded[0][i] = packet_raw[0][i];
+		packet_ecc[coding_buffer][i] = packet_raw[coding_buffer][i];
 		if(!(n%2)) //set even parity bit
-			packet_coded[0][i] |= 1<<8;
+			packet_ecc[coding_buffer][i] |= 1<<8;
 	}
+
+	//set the status register and buffer pointers appropriately
+	coding_buffer++;
+	if(coding_buffer==BUFFERS) //advance the buffer pointer
+		coding_buffer = 0;
+	if(coding_buffer==input_buffer) //still waiting for a new dataset
+		status &= !(1<<1);
 }
