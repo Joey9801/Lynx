@@ -1,6 +1,5 @@
 #include "init.c"
 #include "debug.c"
-#include "leds.c"
 
 char read_addr(char addr);
 
@@ -11,20 +10,32 @@ int main(void){
 	spi_setup();
 	debug_send("accel_setup()\n");
 	accel_setup();
-	debug_send("gpio_setup()\n");
-	gipo_setup();
-	int X;
+	char X;
+	char Y;
+	char Z;
 	int i = 0;
 	while(1){
 		X = read_addr(0x29);
+		Y = read_addr(0x2B);
+		Z = read_addr(0x2D);
+		if(X<128) X +=128;
+		else X -=128;
+		//if(Y<128) X +=128;
+		//else Y -=128;
+		//if(Z<128) X +=128;
+		//else Z -=128;
 		debug_send_int(X);
+		debug_send(",");
+		debug_send_int(Y);
+		debug_send(",");
+		debug_send_int(Z);
 		debug_send("\n");
-		for(i=0; i<65000; i++) __asm__("NOP");
+		for(i=0; i<65534; i++) __asm__("NOP");
 	}
 }
 
 char read_addr(char addr){
-	int read;
+	char read;
 	addr |= 1<<7;			//set the 'read' bit high
 
 	gpio_clear(GPIOE, GPIO3);
