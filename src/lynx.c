@@ -1,5 +1,11 @@
 #include "lynx.h"
 
+#include "debug.c"
+#include "ecc.c" 
+#include "setup.c"
+#include "pll.c"
+#include "constellation.c"
+
 int main (void){
 
 	clock_setup();

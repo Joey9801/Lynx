@@ -1,5 +1,5 @@
 void set_constellation(int points);
-void do_constellation(void)
+void do_constellation(void);
 
 
 //Lookup table for constellation co-ordinate

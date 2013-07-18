@@ -4,11 +4,6 @@
 #define BUFFERS 2	//Number of buffer sets
 #define MAXPOINTS 64 	//the maximum number of points allowed in the constellation
 
-#include "debug.c"
-#include "ecc.c" 
-#include "setup.c"
-#include "pll.c"
-
 //raw packets, 1 buffer and 1 active
 volatile char packet_raw[BUFFERS][PACKETLENGTH];
 

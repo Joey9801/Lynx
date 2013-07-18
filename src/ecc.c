@@ -10,12 +10,12 @@ void do_parity(void){
 	for(i=0; i<PACKETLENGTH; i++){
 		n = 0;
 		for(ii=0; ii<7; ii++){
-			if( (packet_raw[coding_buffer][i]&(1<<ii)) == (1<<ii) )
+			if( (packet_raw[ecc_buffer][i]&(1<<ii)) == (1<<ii) )
 				n++; //count set bits in message
 		}
-		packet_ecc[coding_buffer][i] = packet_raw[coding_buffer][i];
+		packet_ecc[ecc_buffer][i] = packet_raw[ecc_buffer][i];
 		if(!(n%2)) //set even parity bit
-			packet_ecc[coding_buffer][i] |= 1<<8;
+			packet_ecc[ecc_buffer][i] |= 1<<8;
 	}
 
 	//set the status register and buffer pointers appropriately
