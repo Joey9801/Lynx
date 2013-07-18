@@ -34,22 +34,34 @@ int main (void){
 
 
 	for ever {
-		while(!status); //just chill while there isn't anything to do
 		int i;
-		for(i=0; i<=5; i++){
+		for(i=0; i<=4; i++){
 			if((status>>i)&1)
-				break;
+				break; //break with the highest priority task
 		}
 			switch(i){
 				case(0):
-					//do some constellation mapping
+					if((status>>4)&1)
+						//there's already a transmit happening
+						break;
+					else{
+						//turn on the transmit interrupt
+					}
 					break;
 				case(1):
-					do_parity();
+					do_constellation();
 					break;
 				case(2):
-					//send the ready pin high
-					//turn on the interrupts for data in
+					do_parity();
+					break;
+				case(3):
+					if((status>>5)&1)
+						//we're already recieving something
+						break;
+					else{
+						//send the ready pin high
+						//turn on the interrupts for recieve
+					}
 					break;
 				default:
 					debug_send("Something funky happened to the status register\n");
