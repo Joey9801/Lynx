@@ -34,8 +34,11 @@ int main (void){
 	debug_send("pll_setup()");
 	pll_setup();
 
-	debug_send("setup_timers()");
+	debug_send("setup_timers(500)");
 	setup_timers(500); //setting a 500ksps sample rate
+
+	debug_send("function_timer_setup(84000)");
+	function_timer_setup(84000); //function timer at 84MHz
 
 
 	for ever {

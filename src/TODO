@@ -1,0 +1,8 @@
+set up spi1 as slave for data input
+write a function to generate a constellation
+some stuff to make the led's blink
+test the ecc algorithm on the pc
+write some ecc that is a lot better than parity
+rewrite do_constellation() to conform with the new buffers
+dac_setup()
+add optional timing to the algorithms (fo' stats)
