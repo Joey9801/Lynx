@@ -6,7 +6,7 @@ timers and interrupts are setup in schedule.c */
 
 void clock_setup(void){
 	/*Operate at 168MHz*/
-	rcc_clock_setup_hse_3v3(&hse_8mhz_3v3[CLOCK_3V3_48MHZ]);
+	rcc_clock_setup_hse_3v3(&hse_8mhz_3v3[CLOCK_3V3_168MHZ]);
 }
 
 void usart_setup(void){
@@ -85,17 +85,3 @@ void dac_setup(void){
 	//initialise the db gpios
 	//initialise the dac-clk gpio
 }
-
-void timer_setup(void){
-	//4 timers:
-	//dac-db update + calculate next fir sample
-	//dac-clk pulse, linked with above
-	//input timeout - fill the remainder of the packet with 0's
-}
-
-void nvic_setup(void){
-	//setup all the interrupts for the timers + spi input
-}
-
-
-

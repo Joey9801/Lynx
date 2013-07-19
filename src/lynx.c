@@ -1,10 +1,12 @@
 #include "lynx.h"
 
+#include "setup.c"
+#include "shedule.c"
 #include "debug.c"
 #include "ecc.c" 
-#include "setup.c"
 #include "pll.c"
 #include "constellation.c"
+
 
 int main (void){
 
@@ -32,11 +34,8 @@ int main (void){
 	debug_send("pll_setup()");
 	pll_setup();
 
-	debug_send("timer_setup()");
-	timer_setup();
-
-	debug_send("nvic_setup()");
-	nvic_setup();
+	debug_send("setup_timers()");
+	setup_timers(500); //setting a 500ksps sample rate
 
 
 	for ever {

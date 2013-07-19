@@ -17,6 +17,4 @@ void usart_setup(void);
 void ledpins_setup(void);
 void spi1_setup(void);
 void spi2_setup(void);
-void nvic_setup(void);
 void dac_setup(void);
-void timer_setup(void);
