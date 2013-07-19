@@ -13,7 +13,7 @@ int main (void){
 	clock_setup();
 	usart_setup();
 
-	debug_send("*************************************\n");
+	debug_send("\n\n\n*************************************\n");
 	debug_send("*         Lynx starting up          *\n");
 	debug_send("*           Joe Roberts             *\n");
 	debug_send("*        UROP - Summer 2013         *\n");
@@ -40,19 +40,11 @@ int main (void){
 
 	for ever {
 		int i;
-		for(i=0; i<=4; i++){
+		for(i=1; i<=4; i++){
 			if((status>>i)&1)
 				break; //break with the highest priority task
 		}
 			switch(i){
-				case(0):
-					if((status>>4)&1)
-						//there's already a transmit happening
-						break;
-					else{
-						//turn on the transmit interrupt
-					}
-					break;
 				case(1):
 					do_constellation();
 					break;
@@ -75,6 +67,16 @@ int main (void){
 					debug_send("\n");
 					break;
 		
+			}
+
+			if(status&1) { //test for the transmit ready
+				if((status>>4)&1){
+					//there's already a transmit happening
+				}
+
+				else{
+					//turn on the transmit interrupt
+				}
 			}
 	}
 	
