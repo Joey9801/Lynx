@@ -57,6 +57,8 @@ void spi2_setup(void){
 	//setup the chip select
 	//may be able to use hardware instead of the hacky software
 
+	gpio_mode_setup(GPIOB, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO12);
+
 	gpio_mode_setup(GPIOB, GPIO_MODE_AF, GPIO_PUPD_NONE, 
 						GPIO13|
 						GPIO14|
@@ -86,14 +88,14 @@ void dac_setup(void){
 	//initialise the dac-clk gpio
 }
 
-void function_timer_setup(int timer_clock){ //timer_clock in Khz
+void function_timer_setup(int timer_clock, int period){ //timer_clock in Khz
 
 	int prescalar = (84000/timer_clock) -1;
-	//led update timer
+
 	rcc_peripheral_enable_clock(&RCC_APB1ENR, RCC_APB1ENR_TIM5EN);
 	timer_reset(TIM5);
 	timer_set_mode(TIM5, TIM_CR1_CKD_CK_INT, TIM_CR1_CMS_EDGE, TIM_CR1_DIR_UP);
 	timer_enable_irq(TIM5, TIM_DIER_UIE);	
-	timer_set_period(TIM5, 0x0FFFFFFF);	//3.2 second timeout @84Mhz
+	timer_set_period(TIM5, period);
 	timer_set_prescaler(TIM5, prescalar);
 }

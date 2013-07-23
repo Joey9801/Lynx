@@ -18,4 +18,4 @@ void ledpins_setup(void);
 void spi1_setup(void);
 void spi2_setup(void);
 void dac_setup(void);
-void function_timer_setup(int timer_clock);
+void function_timer_setup(int timer_clock, int period);
