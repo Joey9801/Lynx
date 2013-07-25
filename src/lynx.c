@@ -6,6 +6,7 @@
 #include "ecc.c" 
 #include "pll.c"
 #include "constellation.c"
+#include "fir.c"
 
 
 int main (void){
@@ -31,56 +32,39 @@ int main (void){
 	debug_send("dac_setup()");
 	dac_setup();
 
-	debug_send("pll_setup()");
-	pll_setup();
+	debug_send("pll_setup(63, 16443, 3)");
+	pll_setup(63, 16443, 3); //n_div, r_div, o_div
 
 	debug_send("setup_timers(500)");
 	setup_timers(500); //setting a 500ksps sample rate
 
-	debug_send("function_timer_setup(84000)");
-	function_timer_setup(84000); //function timer at 84MHz
-
 
 	for ever {
-		int i;
-		for(i=1; i<=4; i++){
-			if((status>>i)&1)
-				break; //break with the highest priority task
+		if((status>>0)&1) { //test for the transmit ready flag
+			if((status>>4)&1){
+				//there's already a transmit happening
+			}
+
+			else{
+				//turn on the transmit interrupt
+			}
 		}
-			switch(i){
-				case(1):
-					do_constellation();
-					break;
-				case(2):
-					do_parity();
-					break;
-				case(3):
-					if((status>>5)&1)
-						//we're already recieving something
-						break;
-					else{
-						//send the ready pin high
-						//turn on the interrupts for recieve
-					}
-					break;
-				default:
-					debug_send("Something funky happened to the status register\n");
-					debug_send("The value of 'status', is ");
-					debug_send_int(status);
-					debug_send("\n");
-					break;
-		
+		if((status>>3)&1) { //test for the read ready flag
+			if((status>>5)&1){
+				//there's already a read happening
 			}
 
-			if(status&1) { //test for the transmit ready
-				if((status>>4)&1){
-					//there's already a transmit happening
-				}
-
-				else{
-					//turn on the transmit interrupt
-				}
+			else{
+				//turn on the read interrupt
+				//set the read ready pin high
 			}
+		}
+		if((status>>1)&1) { //packet ready for constellation coding
+			do_constellation();
+		}
+		else if((status>>2)&1) { //packet ready for error coding
+			do_parity();
+		}
 	}
 	
 	debug_send("We somehow escaped the for ever loop\n");

@@ -8,6 +8,6 @@ enum pll_stat_mask {
 };
 
 void set_pll_stat(enum pll_stat_mask stat_mask);
-void pll_setup(void);
+void pll_setup(int r_div, int n_div, int o_div);
 void pll_write(char addr, char data);
 char pll_read(char addr);

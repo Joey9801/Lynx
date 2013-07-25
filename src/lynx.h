@@ -13,11 +13,16 @@ volatile short packet_ecc[BUFFERS][PACKETLENGTH*2];
 //set of symbols to be transmitted
 volatile short packet_constellation[BUFFERS][PACKETLENGTH*8][2];
 
+volatile char next_transmit[2];
+
 
 volatile unsigned char input_buffer = 0;
 volatile unsigned char ecc_buffer = 0;
 volatile unsigned char constellation_buffer = 0;
 volatile unsigned char transmit_buffer = 0;
+
+//points to the next symbol to be transmitted in packet_constellation
+volatile unsigned short transmit_ptr = 0;
 
 char status = 0;
 /* 

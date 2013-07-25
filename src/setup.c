@@ -84,8 +84,17 @@ void spi2_setup(void){
 }
 
 void dac_setup(void){
-	//initialise the db gpios
-	//initialise the dac-clk gpio
+	//dac_db bus
+	//PC[0:7]   ->   DAC1[0:7]
+	//PC[8:15]  ->   DAC2[0:7]
+	rcc_peripheral_enable_clock(&RCC_AHB1ENR, RCC_AHB1ENR_IOPCEN);
+	gpio_mode_setup(GPIOC, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO_ALL);
+
+	//dac-sleep -> PA11
+	//dac-clk   -> PA12
+	//both pins are shared between the 2 dac's	
+	rcc_peripheral_enable_clock(&RCC_AHB1ENR, RCC_AHB1ENR_IOPAEN);
+	gpio_mode_setup(GPIOA, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO11|GPIO12);
 }
 
 void function_timer_setup(int timer_clock, int period){ //timer_clock in Khz
