@@ -1,0 +1,12 @@
+This software is designed to work on the Lynx dev r1 board, and other pin-compatible boards.
+It takes in SPI data from SPI1, and generates streams of IQ values.
+Error coding and constellation mapping is easily changeable.
+
+Process:
+The main loop in lynx.c manages the priorities of the various tasks
+What needs to be done is stored in 'status', tasks of higher priorities are in the less significant bits of this value.
+Every iteration of the main loop:
+	If there is nothing being transmitted, and a packet is ready, transmission begins
+	If there is a free input buffer, data input is enabled
+	If there is a raw packet ready to be error coded, it is done (all in one go)
+	UNLESS there is an error coded packet ready to be mapped to a constellation
