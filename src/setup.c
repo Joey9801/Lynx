@@ -10,18 +10,18 @@ void clock_setup(void){
 }
 
 void usart_setup(void){
-	//the USART header is attached to usart2
+	//the USART header is attached to usart1
 
 	rcc_peripheral_enable_clock(&RCC_APB2ENR, RCC_APB2ENR_USART1EN);
 	//usart pins
 	gpio_mode_setup(GPIOA, GPIO_MODE_AF, GPIO_PUPD_NONE,
 						GPIO9|
 						GPIO10);
-	gpio_set_af(GPIOA, GPIO_AF7,		GPIO2|
-						GPIO3);
+	gpio_set_af(GPIOA, GPIO_AF7,		GPIO9|
+						GPIO10);
 
 	//configuring the usart
-	usart_set_baudrate(USART2, 38400);
+	usart_set_baudrate(USART1, 38400);
 	usart_set_databits(USART1, 8);
 	usart_set_stopbits(USART1, USART_STOPBITS_1);
 	usart_set_mode(USART1, USART_MODE_TX);
@@ -95,6 +95,7 @@ void dac_setup(void){
 	//both pins are shared between the 2 dac's	
 	rcc_peripheral_enable_clock(&RCC_AHB1ENR, RCC_AHB1ENR_IOPAEN);
 	gpio_mode_setup(GPIOA, GPIO_MODE_OUTPUT, GPIO_PUPD_NONE, GPIO11|GPIO12);
+	gpio_clear(GPIOA, GPIO11|GPIO12); //set the clock low, sleep off
 }
 
 void function_timer_setup(int timer_clock, int period){ //timer_clock in Khz
