@@ -11,8 +11,8 @@
 
 int main (void){
 
-	clock_setup();
-	usart_setup();
+	clock_setup(); //setup the main clock for 168MHz
+	usart_setup(); //setup usart1 for debug messages
 
 	debug_send("\n\n\n*************************************\n");
 	debug_send("*         Lynx starting up          *\n");
@@ -21,16 +21,16 @@ int main (void){
 	debug_send("*************************************\n\n\n");
 
 	debug_send("ledpins_setup()");
-	ledpins_setup();
+	ledpins_setup(); //setup the status led's gpio's
 
 	debug_send("spi1_setup()");
-	spi1_setup();
+	spi1_setup(); //setup spi1 as slave for reading data in
 
 	debug_send("spi2_setup()");
-	spi2_setup();
+	spi2_setup(); //setup spi2 as master for writing to the pll
 
 	debug_send("dac_setup()");
-	dac_setup();
+	dac_setup(); //setup the dac gpio's
 
 	debug_send("pll_setup(63, 16443, 3)");
 	pll_setup(63, 16443, 3); //n_div, r_div, o_div
@@ -40,8 +40,8 @@ int main (void){
 
 
 	for ever {
-		if((status>>0)&1) { //test for the transmit ready flag
-			if((status>>4)&1){
+		if(transmit_ready) { //test for the transmit ready flag
+			if(currently_transmitting){
 				//there's already a transmit happening
 			}
 
@@ -49,8 +49,8 @@ int main (void){
 				//turn on the transmit interrupt
 			}
 		}
-		if((status>>3)&1) { //test for the read ready flag
-			if((status>>5)&1){
+		if(read_ready) { //test for the read ready flag
+			if(currently_reading){
 				//there's already a read happening
 			}
 
@@ -59,10 +59,10 @@ int main (void){
 				//set the read ready pin high
 			}
 		}
-		if((status>>1)&1) { //packet ready for constellation coding
+		if(constellation_ready) { //packet ready for constellation coding
 			do_constellation();
 		}
-		else if((status>>2)&1) { //packet ready for error coding
+		else if(ecc_ready) { //packet ready for error coding
 			do_parity();
 		}
 	}

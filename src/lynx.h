@@ -24,27 +24,21 @@ volatile unsigned char transmit_buffer = 0;
 //points to the next symbol to be transmitted in packet_constellation
 volatile unsigned short transmit_ptr = 0;
 
-char status = 0;
-/* 
-each bit of status represents something that has to be done
-
-bit  |	Task
-0	There is a packet ready to be transmitted
-1	There is a packet ready to be mapped to a constellation
-2	There is a packet ready to be error coded
-3	There is a free buffer for new data
-4	Currently transmitting
-5	Currently Recieving
-6-7	unused
-
-pulse shaping is carried out on a per symbol basis inside the transmit interrupt
-
-priority is built into the todo, carry out the task on the least
-significant set bit first
-*/
-
 /*
-When a task completes, it must set the next tasks flag and advance
-it's own pointer. If its pointer now equals the one below, it must
-reset its own flag.
+The following are status values.
+They are written to by the various algorithms when they start/finish.
+They are read by the main loop, which then calls the relevant functions
 */
+
+//There is a packet ready to be transmitted
+volatile bool transmit_ready = false;
+//There is a packet ready to be mapped to a constellation
+volatile bool constellation_ready = false;
+//There is a packet ready to be error coded
+volatile bool ecc_ready = false;
+//There is a free buffer for new data
+volatile bool read_ready = true;
+//There is a transmit currently happening
+volatile bool currently_transmitting = false;
+//The current read buffer is still being filled+hasn't timed out
+volatile bool currently_reading = true;
