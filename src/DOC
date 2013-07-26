@@ -10,3 +10,55 @@ Every iteration of the main loop:
 	If there is a free input buffer, data input is enabled
 	If there is a raw packet ready to be error coded, it is done (all in one go)
 	UNLESS there is an error coded packet ready to be mapped to a constellation
+
+
+
+Buffers and pointers:
+there are 3 defines which determine the nature of the buffers
+PACKETLENGTH is the number of bytes in each packet
+BUFFERS is the number of sets of buffers
+
+There are 4 buffers which store data in its various stages through signal processing.
+Until the packet has finished transmitting, the buffers relevant to that packet are all unique to that set.
+
+packet_raw[BUFFERS][PACKETLENGTH] is the raw data
+packet_ecc[BUFFERS][PACKETLENGTH*2] is the error coded data
+packet_constellation[BUFFERS][PACKETLENGTH*8][2] is a set of IQ points on the constellation
+next_transmit[2] is next sample to be transmitted. When no pulse shaping is used, this is the same as the current row of packet_constellation.
+
+
+There are number of pointers to the buffers which mark how much each algorithm has done.
+
+input_buffer points to the next/current packet_raw which is to be written to
+ecc_buffer points to the next packet_raw to be processed into a packet_ecc
+constellation_buffer points to the next packet_ecc to be processed into a packet_constellation
+transmit_buffer points to the next/current buffer to be transmitted
+
+There are also a few pointers+buffers to do with the fir filter. These are described later
+
+
+The status char:
+Each bit of the status char represents a task to be carried out
+
+bit  |	Task
+0	There is a packet ready to be transmitted
+1	There is a packet ready to be mapped to a constellation
+2	There is a packet ready to be error coded
+3	There is a free buffer for new data
+4	Currently transmitting
+5	Currently Recieving
+6-7	unused
+
+These bits are altered by the various algorithms on their completion.
+Some of the algorithms run on interrupts, therefore the status bits are checked continuously in the main loop.
+Each iteration of the main loop, the transmit ready, and read ready bits are checked, since they run on interrupts they dont hog the main loop.
+ecc is only run if there isn't a pending constellation map
+
+Reading data in:
+Turn on the SPI DR not empty interrupt
+Set status bit 5
+Set the ready pin high; this lets the data source know we are accepting new data
+The interrupt will now place the next PACKET_LENGTH recieved bytes into packet_raw[input_buffer][]
+After the last byte is put into packet_raw, input_buffer is increased by 1.
+If transmit_buffer != input_buffer, then input_buffer must be pointing at an available buffer status bit 3 remains high
+
