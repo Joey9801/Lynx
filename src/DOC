@@ -37,17 +37,15 @@ transmit_buffer points to the next/current buffer to be transmitted
 There are also a few pointers+buffers to do with the fir filter. These are described later
 
 
-The status char:
-Each bit of the status char represents a task to be carried out
+The status variables:
+There are 6 bool values to describe the current status. They are as follows:
 
-bit  |	Task
-0	There is a packet ready to be transmitted
-1	There is a packet ready to be mapped to a constellation
-2	There is a packet ready to be error coded
-3	There is a free buffer for new data
-4	Currently transmitting
-5	Currently Recieving
-6-7	unused
+transmit_ready 		- There is a packet ready to be transmitted
+constellation_ready 	- There is a packet ready to be mapped to a constellation
+ecc_ready 		- There is a packet ready to be error coded
+read_ready		- There is a free buffer for new data
+currently_transmitting 	- There is a transmit currently happening
+currently_reading 	- The current read buffer is still being filled
 
 These bits are altered by the various algorithms on their completion.
 Some of the algorithms run on interrupts, therefore the status bits are checked continuously in the main loop.
@@ -56,9 +54,22 @@ ecc is only run if there isn't a pending constellation map
 
 Reading data in:
 Turn on the SPI DR not empty interrupt
-Set status bit 5
+Set 'currently_reading'
 Set the ready pin high; this lets the data source know we are accepting new data
 The interrupt will now place the next PACKET_LENGTH recieved bytes into packet_raw[input_buffer][]
 After the last byte is put into packet_raw, input_buffer is increased by 1.
-If transmit_buffer != input_buffer, then input_buffer must be pointing at an available buffer status bit 3 remains high
+Set ecc_ready, to start error coding.
+If transmit_buffer != input_buffer, then input_buffer must be pointing at an available buffer, read_ready remains true.
+
+Error coding data:
+Call an error coding function. There are references inside the function to ecc_buffer.
+After the last byte is put into packet_ecc, ecc_buffer is increased by 1.
+If transmit_buffer != ecc_buffer, then ecc_buffer must be pointing at an available buffer status bit 2 remains high.
+Set constellation_ready to start constellation mapping.
+
+Constellation mapping data:
+Call an constellation mapping function. There are references inside the function to constellation_buffer.
+After the last byte is put into packet_constellation, constellation_buffer is increased by 1.
+If transmit_buffer != constellation_buffer, then constellation_buffer must be pointing at an available buffer status bit 2 remains high.
+Set transmit_ready to start transmit.
 
