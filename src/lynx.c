@@ -40,30 +40,29 @@ int main (void){
 
 
 	for ever {
-		if(transmit_ready) { //test for the transmit ready flag
-			if(currently_transmitting){
-				//there's already a transmit happening
-			}
-
-			else{
-				//turn on the transmit interrupt
-			}
+		
+		if(ecc_ready) { //packet ready for error coding
+			do_parity();
+			ecc_buffer++;
+			if(ecc_buffer==BUFFERS)
+				ecc_buffer = 0;
+			if(ecc_buffer==input_buffer)
+				ecc_ready = false;
+				
+			do_constellation();
+			transmit_ready = true;
+			constellation_buffer++;
+			if(constellation_buffer==BUFFERS)
+				constellation_buffer = 0;
 		}
-		if(read_ready) { //test for the read ready flag
-			if(currently_reading){
-				//there's already a read happening
-			}
-
-			else{
-				//turn on the read interrupt
-				//set the read ready pin high
-			}
-		}
+		
+		
 		if(constellation_ready) { //packet ready for constellation coding
 			do_constellation();
-		}
-		else if(ecc_ready) { //packet ready for error coding
-			do_parity();
+			transmit_ready = true;
+			constellation_buffer++;
+			if(constellation_buffer==BUFFERS)
+				constellation_buffer = 0;
 		}
 	}
 	
@@ -72,4 +71,38 @@ int main (void){
 	debug_send("goodbye, cruel world");
 	while(1);
  return 1;
+}
+
+void transmit_check(void){
+	if(transmit_ready) { //test for the transmit ready flag
+			if(currently_transmitting){
+				//there's already a transmit happening
+				//do nothing
+				return;
+			}
+
+			else{
+				//turn on the transmit interrupt
+				currently_transmitting = true;
+				transmit_ready = false; //dont bother checking all this again
+				return;
+			}
+		}
+}
+
+void read_check(void){
+	if(read_ready) { //test for the read ready flag
+			if(currently_reading){
+				//there's already a read happening
+				//do nothing
+				return;
+			}
+
+			else{
+				//turn on the read interrupt
+				currently_reading = true;
+				read_ready = false; //dont bother checking all this again
+				return;
+			}
+		}
 }

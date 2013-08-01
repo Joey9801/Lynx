@@ -21,6 +21,9 @@ volatile unsigned char ecc_buffer = 0;
 volatile unsigned char constellation_buffer = 0;
 volatile unsigned char transmit_buffer = 0;
 
+//the address of the next byte to be read in
+volatile unsigned short read_ptr = 0;
+
 //points to the next symbol to be transmitted in packet_constellation
 volatile unsigned short transmit_ptr = 0;
 
