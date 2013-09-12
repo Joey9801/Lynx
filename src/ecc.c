@@ -1,5 +1,10 @@
 #include "ecc.h"
 
+void do_ecc(void){
+	do_parity();
+	return;
+}
+
 //sets the 9th bit of each word as parity
 void do_parity(void){
 	coded_words=PACKETLENGTH;	//no extra words added
@@ -17,11 +22,4 @@ void do_parity(void){
 		if(!(n%2)) //set even parity bit
 			packet_ecc[ecc_buffer][i] |= 1<<8;
 	}
-
-	//set the status register and buffer pointers appropriately
-	ecc_buffer++;
-	if(ecc_buffer==BUFFERS) //advance the buffer pointer
-		ecc_buffer = 0;
-	if(ecc_buffer==input_buffer) //still waiting for a new dataset
-		status &= !(1<<1);
 }

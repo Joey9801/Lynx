@@ -17,13 +17,18 @@ void tim2_isr(void){
 		//detect end of packet transmission
 		/* if(end of packet){
 			currently_transmitting = false;
+			if(buffers_full){
+				buffers_full=false;
+				enable spi1 interrupts
+				set 'full' pin low
+			}
 			timer_disable_counter(TIM2);
 			timer_set_counter(TIM2, 0);
 			gpio_clear(GPIOA, GPIO12); //set DAC-CLK low
 		} */
 	}
 	if(timer_interrupt_source(TIM3, TIM_SR_UIF)){
-		GPIO_DR(GPIOC) = out[1] | (out[0]<<8); //set the dac-db pins
+		gpio_port_write(GPIOC, (next_transmit[1] | (next_transmit[0]<<8))); //set the dac-db pins
 		gpio_clear(GPIOA, GPIO12); //set DAC-CLK low
 		timer_clear_flag(TIM2, TIM_SR_UIF); //reset the interrupt flag
 		generate_sample();

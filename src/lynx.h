@@ -1,3 +1,5 @@
+#include <stdbool.h>
+
 #define ever (;;)
 
 #define PACKETLENGTH 50	//Number of bytes in each transmit
@@ -13,6 +15,7 @@ volatile short packet_ecc[BUFFERS][PACKETLENGTH*2];
 //set of symbols to be transmitted
 volatile short packet_constellation[BUFFERS][PACKETLENGTH*8][2];
 
+//the next two analogue values to be sent to the dac pair
 volatile char next_transmit[2];
 
 
@@ -27,21 +30,11 @@ volatile unsigned short read_ptr = 0;
 //points to the next symbol to be transmitted in packet_constellation
 volatile unsigned short transmit_ptr = 0;
 
-/*
-The following are status values.
-They are written to by the various algorithms when they start/finish.
-They are read by the main loop, which then calls the relevant functions
-*/
-
 //There is a packet ready to be transmitted
-volatile bool transmit_ready = false;
-//There is a packet ready to be mapped to a constellation
-volatile bool constellation_ready = false;
-//There is a packet ready to be error coded
-volatile bool ecc_ready = false;
-//There is a free buffer for new data
-volatile bool read_ready = true;
+volatile char transmits_ready = 0;
+
 //There is a transmit currently happening
 volatile bool currently_transmitting = false;
-//The current read buffer is still being filled+hasn't timed out
-volatile bool currently_reading = true;
+
+//All the buffers are full, ie, input buffer = transmit_buffer
+volatile bool buffers_full = false;

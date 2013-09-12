@@ -7,3 +7,4 @@ void do_constellation(void);
 //constellation[n][1] is the Q co-ordinate of the symbol n
 char constellation[MAXPOINTS][2];
 unsigned int current_size;
+unsigned char bits_per_point;
