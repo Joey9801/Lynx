@@ -1,0 +1,10 @@
+This firmware is designed to test the DACs
+
+There are a number of set waveforms which can be played:
+	square,
+	sin,
+	sawtooth,
+	triangle
+
+The waveform and frequency can be controlled via USART1 on the stm32
+Debug messages also appear on USART1
