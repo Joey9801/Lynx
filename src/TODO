@@ -3,6 +3,6 @@ write a function to generate a constellation
 some stuff to make the led's blink
 test the ecc algorithm on the pc
 write some ecc that is a lot better than parity
-rewrite do_constellation() to conform with the new buffers
+write do_constellation()
 dac_setup()
 add optional timing to the algorithms (fo' stats)

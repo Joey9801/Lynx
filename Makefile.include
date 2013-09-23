@@ -50,7 +50,7 @@ LDSCRIPT	?= $(BINARY).ld
 LDFLAGS		+= --static -lc -lnosys -L$(TOOLCHAIN_DIR)/lib \
 			 -L$(TOOLCHAIN_DIR)/lib/stm32/f4 \
 		   -T$(LDSCRIPT) -nostartfiles -Wl,--gc-sections \
-		   -mthumb -mcpu=cortex-m4 -mthumb -mfloat-abi=hard -mfpu=fpv4-sp-d16
+		   -mthumb -mcpu=cortex-m4 -mthumb -mfloat-abi=hard  -mfpu=fpv4-sp-d16 -lm
 OBJS		+= $(BINARY).o
 
 OOCD		?= openocd

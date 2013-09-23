@@ -3,12 +3,12 @@
 //When a packet is filled with raw data, new_packets is increased by 1
 //When the last buffer is filled, buffers_full is set to true
 
-#include "read.h"
+
 
 void spi1_isr(void){
-	packet_raw[input_buffer][read_ptr] = spi_dr(SPI1);
+	packet_raw[input_buffer][read_ptr] = spi_read(SPI1);
 	read_ptr++;
-	if(read_ptr==PACKETSIZE){
+	if(read_ptr==PACKETLENGTH){
 		read_ptr = 0;
 		input_buffer++;
 		if(input_buffer==BUFFERS)

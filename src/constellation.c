@@ -18,10 +18,5 @@ void do_constellation(void){
 
 	//turn the ecc packet into a series of I/Q locations
 
-	constellation_buffer++;
-	if(constellation_buffer==BUFFERS) //advance the buffer pointer
-		constellation_buffer = 0;
-	if(constellation_buffer==ecc_buffer)
-		status &= !(1<<0); //still waiting for the next dataset to be coded
 	return;
 }

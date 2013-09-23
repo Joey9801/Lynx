@@ -23,9 +23,10 @@ void reset_fir(void){
 	}
 }
 
-void raised_cosine_impulse(int t){
-	float h;
-	h = sin(PI * (t/TAPS_PER_SYMBOL));
+float raised_cosine_impulse(int t){
+#include <math.h>
+	float h = 0;
+    h = sin(PI * (t/TAPS_PER_SYMBOL));
 	h = h*cos((PI * ROLLOFF * t)/TAPS_PER_SYMBOL);
 	h = h / ( 1 - ((4*ROLLOFF*ROLLOFF*t*t)/(TAPS_PER_SYMBOL*TAPS_PER_SYMBOL)));
 	return h;

@@ -8,6 +8,7 @@
 #include "pll.c"
 #include "constellation.c"
 #include "read.c"
+#include <math.h>
 
 
 int main (void){
@@ -52,8 +53,8 @@ int main (void){
 				ecc_ready = false;
 			
 			//check this again so it doesn't wait too long
-			if((transmit_ready>0)&(!currently_transmitting)
-				tim_enable(TIM2);
+			if((transmits_ready>0)&(!currently_transmitting))
+				timer_enable_counter(TIM2);
 
 			do_constellation();
 			constellation_buffer++;
@@ -73,21 +74,4 @@ int main (void){
 	debug_send("goodbye, cruel world");
 	while(1);
  return 1;
-}
-
-void read_check(void){
-	if(read_ready) { //test for the read ready flag
-			if(currently_reading){
-				//there's already a read happening
-				//do nothing
-				return;
-			}
-
-			else{
-				//turn on the read interrupt
-				currently_reading = true;
-				read_ready = false; //dont bother checking all this again
-				return;
-			}
-		}
 }

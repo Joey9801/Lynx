@@ -6,7 +6,7 @@
 #define BUFFERS 2	//Number of buffer sets
 #define MAXPOINTS 64 	//the maximum number of points allowed in the constellation
 
-//raw packets, 1 buffer and 1 active
+//raw packets from the spi in
 volatile char packet_raw[BUFFERS][PACKETLENGTH];
 
 //coded packet buffers
@@ -30,10 +30,9 @@ volatile unsigned short read_ptr = 0;
 //points to the next symbol to be transmitted in packet_constellation
 volatile unsigned short transmit_ptr = 0;
 
-//There is a packet ready to be transmitted
-volatile char transmits_ready = 0;
+volatile bool ecc_ready = false;
+volatile unsigned char transmits_ready = 0;
 
-//There is a transmit currently happening
 volatile bool currently_transmitting = false;
 
 //All the buffers are full, ie, input buffer = transmit_buffer

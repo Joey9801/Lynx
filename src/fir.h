@@ -11,18 +11,18 @@
 float taps[TAPS];
 
 //circular buffer for symbols in the filter delay line
-char symbol_buffer[2][SYMBOL_BUFFER];
+unsigned char symbol_buffer[2][SYMBOL_BUFFER];
 //points at the oldest value in the buffer
-char symbol_ptr = 0;
+unsigned char symbol_ptr = 0;
 //points at the current symbol in the packet
 //how many 0's there currently are at the start of the delay line
-char delay_offset = 0;
+unsigned char delay_offset = 0;
 
 //generates taps for raised cosine filter
 void generate_taps(void);
 
 void reset_fir(void);
-void raised_cosine_impulse(int t);
+float raised_cosine_impulse(int t);
 
 
 

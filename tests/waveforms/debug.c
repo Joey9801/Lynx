@@ -4,7 +4,7 @@ void debug_send(const char *data)
 {
     while (*data)
     {
-        usart_send_blocking(USART1, *data);
+        usart_send_blocking(USART2, *data);
         data++;
     }
 }
@@ -16,12 +16,12 @@ void debug_send_int(int value)
         char buffer[25];
 
         if (value < 0) {
-                usart_send_blocking(USART1, '-');
+                usart_send_blocking(USART2, '-');
                 value = value * -1;
         }
 
         if (value == 0) {
-                usart_send_blocking(USART1, '0');
+                usart_send_blocking(USART2, '0');
         }
 
         while (value > 0) {
@@ -30,6 +30,6 @@ void debug_send_int(int value)
         }
 
         for (i = nr_digits-1; i >= 0; i--) {
-                usart_send_blocking(USART1, buffer[i]);
+                usart_send_blocking(USART2, buffer[i]);
         }
 }

@@ -8,13 +8,15 @@
 
 
 enum waveforms {
-	square,
-	sin,
-	sawtooth,
-	triangle
+	square = 'q',
+	sinw = 's',
+	sawtooth = 'w',
+	triangle = 't'
 };
 
-waveforms current_waveform;
+enum waveforms current_waveform = sawtooth;
+
+void set_waveform(char param);
 
 
 //raw packets, 1 buffer and 1 active
@@ -25,9 +27,6 @@ volatile short packet_ecc[BUFFERS][PACKETLENGTH*2];
 
 //set of symbols to be transmitted
 volatile short packet_constellation[BUFFERS][PACKETLENGTH*8][2];
-
-//the next two analogue values to be sent to the dac pair
-volatile char next_transmit[2];
 
 
 volatile unsigned char input_buffer = 0;
