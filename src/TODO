@@ -6,3 +6,5 @@ write some ecc that is a lot better than parity
 write do_constellation()
 dac_setup()
 add optional timing to the algorithms (fo' stats)
+fix the hard/soft floating point problem
+

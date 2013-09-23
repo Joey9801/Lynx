@@ -1,5 +1,5 @@
 #include "fir.h"
-#include <math.h>
+//#include <math.h>
 
 void generate_taps(void){
 	//BLAM, lots of maths
@@ -24,10 +24,10 @@ void reset_fir(void){
 }
 
 float raised_cosine_impulse(int t){
-#include <math.h>
 	float h = 0;
-    h = sin(PI * (t/TAPS_PER_SYMBOL));
-	h = h*cos((PI * ROLLOFF * t)/TAPS_PER_SYMBOL);
+//Lines commented out until hard/soft floating point bug is fixed.
+//	h = sin(PI * (t/TAPS_PER_SYMBOL));
+//	h = h*cos((PI * ROLLOFF * t)/TAPS_PER_SYMBOL);
 	h = h / ( 1 - ((4*ROLLOFF*ROLLOFF*t*t)/(TAPS_PER_SYMBOL*TAPS_PER_SYMBOL)));
 	return h;
 }
